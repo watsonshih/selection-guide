@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="pic/sq-logo.png">
+    <link rel="shortcut icon" href="pic/sq-logo.png" type="image/x-icon">
+    <title>加退選 - 選課指南</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&Noto+Sans+TC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="selectionguide.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VJZ2K72PMZ');
+    </script>
+</head>
+
+<body>
+    <div class="back" id="back" onclick="location.href='index.html'" type="button">
+        <div>
+            <p>
+                ← BACK</p>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <p style="text-align: center;"><img class="logo" src="pic/logo.png"></p>
+    </a>
+    <h2 class="title">新手上路 - 加退選</h2>
+    <p class="detail">本章節會告訴你怎麼在加退選時選課</p>
+    <hr>
+
+    <p class="title" style="text-align: center;">請先登入選課系統、開啟查詢課程網頁</p>
+    <p style="text-align: center;">
+        <input class="button yellow" id="button" name="button" onclick="window.open('https://selcrs.nsysu.edu.tw/');"
+            type="button" value="🧑‍💻 選課系統" />
+
+        <input class="button blue" id="button" name="button"
+            onclick="window.open('https://selcrs.nsysu.edu.tw/menu1/qrycrsfrm.asp?HIS=1&eng=0');" type="button"
+            value="🧑‍🏫 本學期課程" />
+    </p>
+
+
+    <div class="notice">
+        <p>注意：如果您想要選的課都沒有餘額了，可略過本步驟，請直接寄信詢問教授、並於第一周到課堂上詢問教授是否能加簽（即異常處理）該課程。</p>
+    </div>
+
+    <div class="notice">
+        <p>注意：加退選如同初選二一樣，可以用志願序的方式加選沒選上的課程。</p>
+    </div>
+
+    <div class="notice">
+        <p>注意：加退選階段只能選上一堂跨院課程、一堂博雅課程，舉例來說：如果加退選一已經正式選上了一堂跨院課程，加退選二就不能再加選跨院課程。</p>
+    </div>
+
+    <div class="tip">
+        <p>提示：如果上過第一周、第二周後，想要退選，可以在本加退選階段於選課系統上進行退選，不會在成績單上留下紀錄，但退選後就無法再復原。</p>
+    </div>
+
+    <p style="text-align: center;">接下來，你可以等待結果，並開始著手準備異常處理</p>
+
+    <p style="text-align: right;">
+        <input class="button next" id="button" name="button" onclick="location.href='new5.html';" type="button"
+            value="NEXT：異常處理　〉" />
+    </p>
+
+
+    <hr>
+    <p class="footer">Copyright © 2023 Watson</p>
+    <p class="footer">本站所有內容僅供參考，實際資訊請依當學期規定為準</p>
+    <div class="dfooter">
+        <div>
+            <p>請注意：</p>
+            <p>本站所有內容僅供參考，實際資訊請依當學期規定為準。</p>
+        </div>
+    </div>
+</body>
+
+</html>

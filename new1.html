@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="pic/sq-logo.png">
+    <link rel="shortcut icon" href="pic/sq-logo.png" type="image/x-icon">
+    <title>查必修 - 選課指南</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&Noto+Sans+TC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="selectionguide.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VJZ2K72PMZ');
+    </script>
+</head>
+
+<body>
+    <div class="back" id="back" onclick="location.href='index.html'" type="button">
+        <div>
+            <p>
+                ← BACK</p>
+        </div>
+    </div>
+
+    <div class="dfooter">
+        <div>
+            <p>請注意：</p>
+            <p>本站所有內容僅供參考，實際資訊請依當學期規定為準。</p>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <p style="text-align: center;"><img class="logo" src="pic/logo.png"></p>
+    </a>
+    <h2 class="title">新手上路 - 查必修</h2>
+    <p class="detail">本章節會告訴你怎麼查這學期有哪些必修課</p>
+    <hr>
+
+    <p class="title" style="text-align: center;">請先登入選課系統</p>
+    <p style="text-align: center;">
+        <input class="button yellow" id="button" name="button" onclick="window.open('https://selcrs.nsysu.edu.tw/');"
+            type="button" value="🧑‍💻 選課系統" />
+    </p>
+
+    <p style="text-align: center;">登入後可以看到下圖：</p>
+    <p style="text-align: center;"><img class="pic" src="pic/new1-1.png"></p>
+
+    <p style="text-align: center;">選擇 [選課結果查詢] → [目前選課資料]</p>
+    <p style="text-align: center;">目前還沒進入正式選課階段，可以看到系統已經先幫我們預選系上的必修課程。</p>
+    <p style="text-align: center;"><img class="pic" src="pic/new1-2.png"></p>
+    <div class="tip">
+        <p>提示：正常來說，我們不會退掉當學期的必修課，所以我們在排課時會先把必修課加進自己規劃的課表中，未來排課時就避開這些時間。
+        </p>
+    </div>
+
+    <p style="text-align: center;">接下來我們可以開始排課，但我們從上圖中可以發現系統沒有顯示上面必修課的時間，所以我們要先去查這些課的時間。</p>
+    <p class="title" style="text-align: center;">請先開啟查詢課程網頁</p>
+
+    <p style="text-align: center;">
+        <input class="button blue" id="button" name="button"
+            onclick="window.open('https://selcrs.nsysu.edu.tw/menu1/qrycrsfrm.asp?HIS=1&eng=0');" type="button"
+            value="🧑‍🏫 本學期課程" />
+    </p>
+
+    <div class="tip">
+        <p>提示：剛剛已經有登入選課系統，可以發現查詢課程時不必輸入驗證碼。
+        </p>
+        <p style="text-align: center;"><img class="pic" src="pic/new1-3.png"></p>
+    </div>
+
+    <p style="text-align: center;">因為我們要查詢系所課程，所以先選擇 [大學部] → [選擇要查的系所]，可以看情況選擇年級、班級進行篩選。</p>
+    <p style="text-align: center;"><img class="pic" src="pic/new1-4.png"></p>
+
+    <p style="text-align: center;">我們可以在右邊看到該堂課的上課時間。</p>
+    <p style="text-align: center;"><img class="pic" src="pic/new1-5.png"></p>
+
+    <div class="tip">
+        <p>提示：一個字母或數字代表一節課；大部分來說，如果是3學分的課，就會每周上三小時，但是實驗課或部分課程可能例外；周三的第8、9節是導師時間，不會有課程在導師時間授課。
+        </p>
+        <p style="text-align: center;"><img class="pic" src="pic/new1-6.png"></p>
+
+    </div>
+
+    <div class="eg">
+        <p>例如：有一堂必修-基礎程式應用是在星期一的2、3、4，代表它上課時間為星期一的9:10-12:00，未來排課時就要避開這段時間。</p>
+    </div>
+    <div class="tip">
+        <p>提示：其實課程查詢網頁也可以查到該學期該系該年級的必修課，但每個人可能會因為休學、復學等情況而被排入不同的必修課，所以同學可以視情況來查詢自己當學期的必修課有哪些；如果對於系統自動排入的必修課有任何問題，可以諮詢教務處課務組。
+        </p>
+    </div>
+
+    <div class="notice">
+        <p>注意：有些課程實際的上課時間可能與表上不同，請仔細查看課程說明。</p>
+
+    </div>
+
+    <div class="notice">
+        <p>注意：有些課會限制選修、綁學程、高教深耕計畫(中)、他國語言授課等，請仔細查看課程說明，如有問題請聯絡開課系所承辦人員。</p>
+
+        <p style="text-align: center;"><img class="pic" src="pic/new1-7.png"></p>
+    </div>
+
+    <p style="text-align: center;">點進去可以查看該課程的詳細資訊，但此資訊僅供參考，實際以第一堂教授公布為主，所以第一堂課通常一定要去上。</p>
+    <p style="text-align: center;"><img class="pic" src="pic/new1-8.png"></p>
+
+    <p style="text-align: center;">查到課的時間後，放進自己規劃的課表裡面。</p>
+
+    <div class="notice">
+        <p>注意：大部分的人在規劃課表時，都會透過社群論壇來搜尋課程內容評價，但每年的課程內容、教師都可能會有異動，且匿名論壇之言論僅供參考，請自行判斷真實性。</p>
+    </div>
+
+    <p style="text-align: center;">接下來，你可以開始著手準備初選一。</p>
+
+    <p style="text-align: right;">
+        <input class="button next" id="button" name="button" onclick="location.href='new2.html';" type="button"
+            value="NEXT：初選一　〉" />
+    </p>
+
+
+
+
+    <hr>
+    <p class="footer">Copyright © 2023 Watson</p>
+    <p class="footer">本站所有內容僅供參考，實際資訊請依當學期規定為準</p>
+    <div class="dfooter">
+        <div>
+            <p>請注意：</p>
+            <p>本站所有內容僅供參考，實際資訊請依當學期規定為準。</p>
+        </div>
+    </div>
+</body>
+
+</html>
