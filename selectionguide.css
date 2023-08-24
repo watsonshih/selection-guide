@@ -1,5 +1,5 @@
 ::selection {
-    background: #242424;
+    background: #6b6b6b;
     color: #555;
     background-color: none;
 }
@@ -8,7 +8,7 @@ html {
     font-family: 'Barlow', 'Noto Sans TC';
     font-size: 1.1em;
     color: #fff;
-    background-color: #1f1f1f;
+    background-color: #242424;
     margin: 10px;
     scroll-behavior: smooth;
 
