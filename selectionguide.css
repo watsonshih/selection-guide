@@ -155,11 +155,9 @@ html {
     border-radius: 10px;
     text-align: justify;
     display: inline-table;
-    min-width: 21%;
-    max-width: 21%;
-    width: auto;
     align-items: center;
     color: #57f7d9;
+    width: calc((100vw - 310px) / 4);
 }
 
 .contact.sw {
@@ -212,19 +210,17 @@ html {
     content: "#";
 }
 
-@media (max-width: 810px) {
+@media (max-width: 1000px) {
     .contact {
-        width: 92%;
-        max-width: 100%;
+        width: calc((100vw - 40px));
         margin: 20px 0px;
     }
 }
 
-@media (max-width: 550px) {
-    .contact {
-        width: 88%;
-        margin: 20px 0px;
-    }
+.flexdiv {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 hr {
