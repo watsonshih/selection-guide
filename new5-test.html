@@ -142,7 +142,7 @@
         <ul>
             <li>受理期間：上班時間 9:00 - 17:00，詳細時程請見西灣學院官網公告</li>
             <li>受理地點：西灣學院（圖資 10 樓），請用學生證感應黑色方盒即可上樓</li>
-            <li>送交單子前需要先掃描 QR Code 填寫申請表單，如果後續有任何問題，會透過表單上的聯絡資訊聯絡你。</li>
+            <li>送交單子前需要先掃描 QR Code 填寫申請表單，如果後續有任何問題，會透過表單上的聯絡資訊聯絡你</li>
         </ul>
     </div>
 
@@ -157,6 +157,12 @@
         <p>注意：異常處理需要時間，如欲確認是否異常處理成功，建議於 2 至 5 個工作天後再上系統查詢，如遇到問題再詢問行政人員。</p>
     </div>
 
+    <p class="title">拯救那些水深火熱、搞不懂異常處理的同學😭</p>
+    <p class="detail">成為選課英雄的你，點擊下方按鈕複製本頁網址，貼給那些同學們吧！</p>
+    <p style="text-align: center;">
+        <input class="button red btnCopy" id="button" name="button" onclick="alert('複製成功！拯救同學去囉！')" type="button"
+            value="🥹 複製網址拯救同學" />
+    </p>
     <p style="text-align: center;">選課階段告一段落了，倘若期中過後你想要棄選課程，可以參考下個說明。</p>
 
     <p style="text-align: right;">
@@ -175,5 +181,20 @@
         </div>
     </div>
 </body>
+
+<script>
+
+    const btnCopy = document.querySelector('.btnCopy');
+
+    btnCopy.addEventListener('click', function () {
+        const value = 'https://watsonshih.github.io/selection-guide/new5.html';
+        const el = document.createElement('textarea');
+        el.value = value;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    });
+</script>
 
 </html>
