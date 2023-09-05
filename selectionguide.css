@@ -114,7 +114,8 @@ html {
 
 }
 
-.qanum {
+.qanum,
+.stepnum {
     margin: 10px 10px 5px 0px;
     padding: 0px;
     border-radius: 10px;
@@ -128,7 +129,12 @@ html {
     content: "Q";
 }
 
-.qanum::after {
+.stepnum::before {
+    content: "Step";
+}
+
+.qanum::after,
+.stepnum::after {
     content: ".";
 }
 
