@@ -127,8 +127,8 @@ const selectionStageRules = {
             { name: "異常處理", language: "限特定情況", crossCollege: "限特定情況", general: "限特定情況", service: "限特定情況", applied: "限特定情況", sportRequired: "限特定情況", sportElective: "限特定情況" }
         ],
         "notes": [
-            "初選一、初選二階段：碩士班學生僅能選運動與健康選修",
-            "加退選一階段：碩士班學生開始可加選通識課程",
+            "初選階段：碩士班學生不可選修通識課程",
+            "加退選階段：碩士班學生開始可加選通識課程",
             "異常處理階段：限特定情況才可申請選課"
         ]
     }
