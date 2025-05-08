@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>西灣學院 通識快速指南 - 國立中山大學</title>
+    <meta name="keywords" content="西灣學院,中山大學,通識,選課指南,中山,選課,規定,教務處,學生">
+    <meta name="description" content="西灣學院通識快速指南，根據入學年度及年級，一覽您適用的規定！">
+    <link rel="icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png">
+    <link rel="shortcut icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png"
+        type="image/x-icon">
+    <meta itemprop="thumbnailUrl" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <meta itemprop="image" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <meta property="og:image" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;600&amp;family=Noto+Sans+TC:wght@350;650&amp;display=swap"
+        rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VJZ2K72PMZ');
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">
+                <a href="https://siwan.nsysu.edu.tw" target="_blank"><img
+                        src="https://siwan.nsysu.edu.tw/static/file/29/1029/img/4414/siwan-logo-black-noshadow.svg"
+                        alt="西灣學院" class="logo-img"></a>
+            </div>
+            <div class="header-content">
+                <h1>通識快速指南</h1>
+                <p>根據入學年度及年級<span class="mob-none">，</span><br class="mob-br">一覽您適用的規定</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="search-section card">
+                <div class="search-form">
+                    <div class="input-group">
+                        <label for="admissionYear">
+                            <i class="fas fa-calendar-alt"></i> 入學年度
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="admissionYear">
+                                <option value="">請選擇入學年度</option>
+                                <option value="109">109 學年</option>
+                                <option value="110">110 學年</option>
+                                <option value="111">111 學年</option>
+                                <option value="112">112 學年</option>
+                                <option value="113">113 學年</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="grade">
+                            <i class="fas fa-user-graduate"></i> 年級
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="grade">
+                                <option value="">請選擇年級</option>
+                                <option value="1">大一</option>
+                                <option value="2">大二</option>
+                                <option value="3">大三</option>
+                                <option value="4">大四</option>
+                                <option value="5">碩士班</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <button id="searchButton" class="btn-primary">
+                        <i class="fas fa-search"></i> 查詢規定
+                    </button>
+                </div>
+            </section>
+
+            <section id="resultsSection" class="results-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>您適用的規定如下</h2>
+                        <span class="badge" id="yearGradeBadge"></span>
+                    </div>
+
+                    <div class="rules-summary">
+                        <div class="rules-grid" id="ruleCards">
+                        </div>
+                    </div>
+
+                    <div class="expandable-section">
+                        <div class="section-header" data-target="creditTableSection">
+                            <h3><i class="fas fa-table"></i> 核心學分配置</h3>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div id="creditTableSection" class="section-content">
+                            <div class="table-responsive">
+                                <table id="creditTable" class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>類別</th>
+                                            <th>學分數</th>
+                                            <th>說明</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="note">
+                                <i class="fas fa-info-circle"></i>
+                                <div>
+                                    <strong>注意</strong>
+                                    <ul>
+                                        <li>運動與健康必修 4 學分均「不列最低畢業學分，但計入修習總學分」。</li>
+                                        <li>體驗性課程：服務學習、應用性課程、大學之道</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expandable-section">
+                        <div class="section-header" data-target="stageTableSection">
+                            <h3><i class="fas fa-calendar-check"></i> 選課階段規定</h3>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div id="stageTableSection" class="section-content">
+                            <div class="table-responsive">
+                                <table id="stageTable" class="data-table selection-table">
+                                    <thead>
+                                        <tr>
+                                            <th>選課階段</th>
+                                            <th>語文課程</th>
+                                            <th>跨院選修</th>
+                                            <th>博雅課程</th>
+                                            <th>服務學習</th>
+                                            <th>應用性課程</th>
+                                            <th>運動與健康必修</th>
+                                            <th>運動與健康選修</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="note" id="stageNote">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expandable-section">
+                        <div class="section-header" data-target="recommendationsSection">
+                            <h3><i class="fas fa-lightbulb"></i> 提醒</h3>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div id="recommendationsSection" class="section-content">
+                            <ul class="recommendations-list">
+                                <li>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <div>
+                                        <strong>畢業審查標準</strong>
+                                        <p>以入學學年度規定為準。</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <div>
+                                        <strong>雙主修/轉系情況</strong>
+                                        <p>原則上仍以入學年規則為主，特殊情況請向西灣學院詢問。</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <div>
+                                        <strong>英文畢業門檻與英語能力標準認證</strong>
+                                        <p>請見 <a href="https://emicenter.siwan.nsysu.edu.tw/graduation-threshold"
+                                                target="_blank">全英語卓越教學中心網站</a> 規定。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p><a href="quickGetRules.html" target="_blank">通識快速指南</a> <a href="faq.html" target="_blank">常見問題</a></p>
+            <p>最後更新日期：2025 - 05 - 08</p>
+            <p>內容僅供參考，請以官方最新公告為準</p>
+            <p>© 西灣學院</p>
+        </footer>
+    </div>
+
+    <script src="js/rules_script.js"></script>
+</body>
+
+</html>
