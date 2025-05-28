@@ -331,6 +331,230 @@ select:focus {
     display: block;
 }
 
+.section-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 2rem 0 1rem 0;
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+.section-content h4:first-child {
+    margin-top: 0;
+}
+
+.section-content h4 i {
+    margin-right: 0.8rem;
+    font-size: 1rem;
+}
+
+.english-threshold-overview {
+    margin: 1.5rem 0;
+}
+
+.english-threshold-overview h5 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.english-threshold-overview h5 i {
+    margin-right: 0.5rem;
+}
+
+.english-requirements-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.english-requirements-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.english-requirements-list>li:first-child {
+    margin-top: 1rem;
+}
+
+.english-requirements-list li:last-child {
+    margin-bottom: 0;
+}
+
+.english-requirements-list i {
+    color: var(--success-color);
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.english-requirements-list strong {
+    color: var(--text-color);
+}
+
+.english-requirements-list ol {
+    margin: 0.5rem 0 0 1.2rem;
+    padding: 0;
+}
+
+.english-requirements-list ol li {
+    display: list-item;
+    margin-bottom: 0.3rem;
+    padding: 0.2rem 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.course-flow-display {
+    border-radius: 10px;
+    padding: 0rem;
+    margin: 1rem 0;
+}
+
+.course-flow-display strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.course-flow-display p {
+    margin: 0.8rem 0;
+}
+
+.course-flow-display .flow-path {
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.sub-expandable-section {
+    margin: 1.5rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sub-section-header {
+    padding: 1.2rem 1.5rem;
+    background: linear-gradient(135deg, var(--card-sm-bg) 0%, #f0f0f0 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+}
+
+.sub-section-header:hover {
+    background: linear-gradient(135deg, #e8e8e8 0%, #dadada 100%);
+}
+
+.sub-section-header h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sub-section-header h5::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background-color: var(--primary-color);
+    margin-right: 0.8rem;
+    border-radius: 2px;
+}
+
+.sub-section-header.active {
+    background: linear-gradient(135deg, #fff4e6 0%, #ffeaa7 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sub-section-content {
+    padding: 1.5rem;
+    display: none;
+    background-color: var(--card-bg);
+}
+
+.sub-section-content.active {
+    display: block;
+}
+
+/* 步驟指引列表 */
+.step-guide-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    counter-reset: step-counter;
+}
+
+.step-guide-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    counter-increment: step-counter;
+}
+
+.step-guide-list li::before {
+    content: counter(step-counter);
+    background-color: var(--primary-color);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.step-guide-list strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 1.05rem;
+}
+
+.step-guide-list p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.step-guide-list ul {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+}
+
+.step-guide-list ul li {
+    display: list-item;
+    margin-bottom: 0.3rem;
+    padding: 0.2rem 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    counter-increment: none;
+}
+
+.step-guide-list ul li::before {
+    display: none;
+}
 
 .table-responsive {
     overflow-x: auto;
@@ -342,6 +566,9 @@ select:focus {
     border-collapse: collapse;
     margin-bottom: 1rem;
     font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .data-table th,
@@ -352,7 +579,7 @@ select:focus {
 }
 
 .data-table th {
-    background-color: var(--card-sm-bg);
+    background: var(--card-sm-bg);
     color: var(--text-color);
     font-weight: bold;
 }
@@ -362,9 +589,8 @@ select:focus {
 }
 
 .data-table tr:hover td {
-    background-color: var(--card-sm-bg);
+    background-color: #f8f9ff;
 }
-
 
 .selection-table th,
 .selection-table td {
@@ -386,12 +612,11 @@ select:focus {
     font-weight: bold;
 }
 
-
 .note {
     background-color: var(--card-sm-bg);
     border: 1px solid var(--border-color);
     padding: 1rem 1.2rem;
-    border-radius: 6px;
+    border-radius: 8px;
     margin: 1rem 0;
     display: flex;
     align-items: flex-start;
@@ -399,9 +624,10 @@ select:focus {
 
 .note i {
     color: var(--primary-color);
-    margin-right: .5rem;
+    margin-right: .8rem;
     font-size: 1.2rem;
     margin-top: 0.2rem;
+    flex-shrink: 0;
 }
 
 .note div {
@@ -410,6 +636,11 @@ select:focus {
 
 .note p {
     color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.note p:last-child {
+    margin-bottom: 0;
 }
 
 .note strong {
@@ -426,7 +657,6 @@ select:focus {
     margin-bottom: 0.5rem;
     color: var(--text-light);
 }
-
 
 .recommendations-list {
     list-style: none;
@@ -577,12 +807,45 @@ select:focus {
     }
 
     .data-table {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .data-table th,
     .data-table td {
         padding: 0.8rem 0.5rem;
+    }
+
+    .sub-section-header {
+        padding: 1rem;
+    }
+
+    .sub-section-header h5 {
+        font-size: 1rem;
+    }
+
+    .sub-section-content {
+        padding: 1rem;
+    }
+
+    .section-content h4 {
+        font-size: 1.1rem;
+        margin: 1.5rem 0 0.8rem 0;
+    }
+
+    .english-threshold-overview,
+    .course-flow-display {
+        padding: 1rem;
+    }
+
+    .step-guide-list li {
+        padding: 0.8rem;
+    }
+
+    .step-guide-list li::before {
+        width: 20px;
+        height: 20px;
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
     }
 }
 

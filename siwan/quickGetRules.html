@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>西灣學院 通識快速指南 - 國立中山大學</title>
-    <meta name="keywords" content="西灣學院,中山大學,通識,選課指南,中山,選課,規定,教務處,學生">
-    <meta name="description" content="西灣學院通識快速指南，根據入學年度及年級，一覽您適用的規定！">
+    <meta name="keywords" content="西灣學院,中山大學,通識,選課指南,中山,選課,規定,教務處,學生,英文門檻,英語畢業">
+    <meta name="description" content="西灣學院通識快速指南，根據入學年度、年級及初始英語分級，一覽您適用的規定！">
     <link rel="icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png">
     <link rel="shortcut icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png"
         type="image/x-icon">
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;600&amp;family=Noto+Sans+TC:wght@350;650&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;600&family=Noto+Sans+TC:wght@350;650&display=swap"
         rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
     <script>
@@ -41,7 +41,7 @@
             </div>
             <div class="header-content">
                 <h1>通識快速指南</h1>
-                <p>根據入學年度及年級<span class="mob-none">，</span><br class="mob-br">一覽您適用的規定</p>
+                <p>根據入學年度、年級及初始英語分級<span class="mob-none">，</span><br class="mob-br">一覽您適用的規定</p>
             </div>
         </header>
 
@@ -78,6 +78,22 @@
                                 <option value="3">大三</option>
                                 <option value="4">大四</option>
                                 <option value="5">碩士班</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="initialEnglishLevel">
+                            <i class="fas fa-language"></i> 初始英語分級
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="initialEnglishLevel">
+                                <option value="">請選擇分級</option>
+                                <option value="初級">初級</option>
+                                <option value="中級">中級</option>
+                                <option value="中高級">中高級</option>
+                                <option value="高級">高級</option>
                             </select>
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -120,7 +136,6 @@
                                     </tbody>
                                 </table>
                             </div>
-
                             <div class="note">
                                 <i class="fas fa-info-circle"></i>
                                 <div>
@@ -130,6 +145,134 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="expandable-section">
+                        <div class="section-header" data-target="englishRequirementsSection">
+                            <h3><i class="fas fa-comments"></i> 英語畢業門檻與修課規定</h3>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div id="englishRequirementsSection" class="section-content">
+                            <div class="note">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div><strong>重要：</strong>以下內容不適用外文系學生，請見系所規定。</div>
+                            </div>
+
+                            <h4><i class="fas fa-graduation-cap"></i> 畢業英文門檻（基本規定）</h4>
+
+                            <div class="english-threshold-overview">
+                                <p>必須達成 <strong>修課學分</strong> + <strong>能力認證</strong> 兩個條件：</p>
+                                <ul class="english-requirements-list">
+                                    <li>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <p><strong>修課學分：</strong>至少 <strong>6 學分</strong>，且至少須達 <strong>中高級</strong>。
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <div>
+                                            <strong>能力認證：</strong>以下兩種方式擇一
+                                            <ol>
+                                                <li>通過本校規定的 <strong>英語檢定</strong> 成績門檻。</li>
+                                                <li>完成 <strong>英語實踐歷程</strong>，累積 <strong>100 點</strong>。</li>
+                                            </ol>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <h4><i class="fas fa-route"></i> 您的修課流程</h4>
+                            <div id="englishCourseFlowDisplay" class="course-flow-display"></div>
+                            <div class="note">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div><strong>注意：</strong>需於不同學期逐級修課。</div>
+                            </div>
+
+                            <h4><i class="fas fa-medal"></i> 能力認證方式</h4>
+                            <p>您可以選擇以下任一方式完成能力認證：</p>
+
+                            <div class="sub-expandable-section">
+                                <div class="sub-section-header" data-sub-target="englishCertificationTestSection">
+                                    <h5>1. 英語檢定成績門檻</h5>
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                </div>
+                                <div id="englishCertificationTestSection" class="sub-section-content">
+                                    <p>以下為各類學生適用標準：</p>
+                                    <div class="table-responsive">
+                                        <table id="englishCertTestTable" class="data-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>測驗 / 指標</th>
+                                                    <th>一般生標準</th>
+                                                    <th>聽障生標準</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                    <div class="note">
+                                        <i class="fas fa-info-circle"></i>
+                                        <div>
+                                            <strong>說明：</strong>
+                                            <ul>
+                                                <li>如需申請適用聽障生標準，請洽全英語卓越教學中心。</li>
+                                                <li>表格中「-」表示該測驗不適用於聽障生標準。</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-expandable-section">
+                                <div class="sub-section-header" data-sub-target="englishPracticePortfolioSection">
+                                    <h5>2. 英語實踐歷程檔案</h5>
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                </div>
+                                <div id="englishPracticePortfolioSection" class="sub-section-content">
+                                    <div id="englishPracticePortfolioDisplay"></div>
+                                </div>
+                            </div>
+
+                            <h4><i class="fas fa-award"></i> 英語檢定抵免標準</h4>
+                            <p>若您的英語檢定成績已達以下門檻，可考慮辦理抵免。<br>
+                                請攜帶 <strong>申請表 + 兩年內有效成績單正本與影本</strong> 於公告時段辦理。</p>
+                            <div id="englishExemptionDisplay">
+                            </div>
+
+                            <h4><i class="fas fa-tasks"></i> 規劃您的英語學習方式</h4>
+                            <ul class="step-guide-list">
+                                <li>
+                                    <div>
+                                        <strong>確認修課流程</strong>
+                                        <p>依據您在本頁查詢到的適用標準來規劃。</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <strong>確認檢定成績</strong>
+                                        <p>檢查您現有的英語檢定成績是否已達「英語檢定抵免標準」。<br>
+                                            若符合，可在規定時間辦理抵免（注意抵免範圍）。</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <strong>修課並取得能力認證</strong>
+                                        <p>若未達抵免標準、無檢定成績，除了修課以外，請透過以下任一方式通過「能力認證」：</p>
+                                        <ul>
+                                            <li>參加英語檢定達到門檻</li>
+                                            <li>參與「英語實踐歷程」活動累積 100 點</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <strong>查閱相關規定</strong>
+                                        <p>詳細規定請參考 <a href="https://emicenter.siwan.nsysu.edu.tw/graduation-threshold"
+                                                target="_blank">全英語卓越教學中心網站</a>。</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -183,14 +326,6 @@
                                         <p>原則上仍以入學年規則為主，特殊情況請向西灣學院詢問。</p>
                                     </div>
                                 </li>
-                                <li>
-                                    <i class="fa-regular fa-circle-dot"></i>
-                                    <div>
-                                        <strong>英文畢業門檻與英語能力標準認證</strong>
-                                        <p>請見 <a href="https://emicenter.siwan.nsysu.edu.tw/graduation-threshold"
-                                                target="_blank">全英語卓越教學中心網站</a> 規定。</p>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -200,13 +335,13 @@
 
         <footer class="footer">
             <p><a href="quickGetRules.html" target="_blank">通識快速指南</a> <a href="faq.html" target="_blank">常見問題</a></p>
-            <p>最後更新日期：2025 - 05 - 08</p>
+            <p>最後更新日期：2025 - 05 - 29</p>
             <p>內容僅供參考，請以官方最新公告為準</p>
             <p>© 西灣學院</p>
         </footer>
     </div>
 
-    <script src="js/rules_script.js?v=202505091051"></script>
+    <script src="js/rules_script.js?v=202505291200"></script>
 </body>
 
 </html>
