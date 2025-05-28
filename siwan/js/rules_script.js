@@ -48,6 +48,16 @@ const rulesDatabase = {
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
         ]
+    },
+    "114": {
+        otherRequirements: "英語能力認證、外文系可用兩門專業選修抵英文必修 + EAP/ESP",
+        creditTable: [
+            { category: "語文素養", credits: "6", description: "中文 3 學分 + 英文 3 學分" },
+            { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
+            { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
+            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+        ]
     }
 };
 
