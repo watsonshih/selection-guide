@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>西灣學院 抵免指南 - 國立中山大學</title>
+    <meta name="keywords" content="西灣學院,中山大學,抵免,申請指南,中山,抵免單,規定,教務處,學生">
+    <meta name="description" content="西灣學院抵免指南，流程式申請指引，讓您清楚了解抵免申請的每個步驟！">
+    <link rel="icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png">
+    <link rel="shortcut icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png"
+        type="image/x-icon">
+    <meta itemprop="thumbnailUrl" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <meta itemprop="image" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <meta property="og:image" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <link rel="stylesheet" href="css/styles_creditTransfer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VJZ2K72PMZ');
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- 頁首區域 -->
+        <header class="header">
+            <div class="header-background"></div>
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="https://siwan.nsysu.edu.tw" target="_blank" class="logo-link">
+                        <img src="https://siwan.nsysu.edu.tw/static/file/29/1029/img/4414/siwan-logo-black-noshadow.svg"
+                            alt="西灣學院" class="logo-img">
+                    </a>
+                </div>
+                <div class="title-section">
+                    <h1 class="main-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        抵免指南
+                    </h1>
+                    <p class="subtitle">流程式申請指引，讓您清楚了解抵免申請的每個步驟</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要內容區域 -->
+        <main class="main-content">
+            <!-- 進度指示器 -->
+            <div class="progress-indicator hidden" id="progressIndicator">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-circle">1</div>
+                        <span>基本資訊</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-circle">2</div>
+                        <span>文件準備</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-circle">3</div>
+                        <span>下載表單</span>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-circle">4</div>
+                        <span>填寫申請</span>
+                    </div>
+                    <div class="step" data-step="5">
+                        <div class="step-circle">5</div>
+                        <span>繳交文件</span>
+                    </div>
+                    <div class="step" data-step="6">
+                        <div class="step-circle">6</div>
+                        <span>完成申請</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 步驟 1: 基本資訊輸入 -->
+            <section id="inputSection" class="section-card step-section">
+                <div class="card-header">
+                    <div class="step-badge">步驟 1</div>
+                    <h2>
+                        <i class="fas fa-user-edit"></i>
+                        填寫基本資訊
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="form-container">
+                        <div class="input-group">
+                            <label for="studentStatus" class="input-label">
+                                <i class="fas fa-id-card"></i>
+                                學生身分
+                            </label>
+                            <div class="select-container">
+                                <select id="studentStatus" class="form-select" required>
+                                    <option value="">請選擇您的身分</option>
+                                    <option value="external">外校轉入學生</option>
+                                    <option value="abroad">經本校核准出國研修或修讀雙聯學位制者</option>
+                                    <option value="readmission">原為本校生再入學者</option>
+                                    <option value="transfer">轉系生(含降轉生)</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">
+                                <i class="fas fa-list-check"></i>
+                                欲抵免的課程類別
+                                <span class="label-note">（可複選）</span>
+                            </label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="chinese_experience" data-form="chinese_experience">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-pen-fancy"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">中文思辨與表達</span>
+                                            <span class="checkbox-subtitle">體驗性課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="interdisciplinary_liberal"
+                                        data-form="interdisciplinary_liberal">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">跨院選修</span>
+                                            <span class="checkbox-subtitle">博雅課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="sports" data-form="sports">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-running"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">運動與健康課程</span>
+                                            <span class="checkbox-subtitle">體育課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="english" data-form="english">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-language"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">英語文課程</span>
+                                            <span class="checkbox-subtitle">語言課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="university_way" data-form="university_way">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-university"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">大學之道</span>
+                                            <span class="checkbox-subtitle">入門課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="humanities_science" data-form="humanities_science">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-atom"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">人科學程課程</span>
+                                            <span class="checkbox-subtitle">跨領域課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="other_department" data-form="other_department">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-building"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">其他系所課程</span>
+                                            <span class="checkbox-subtitle">專業課程</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="action-container">
+                            <button id="generateGuideBtn" class="primary-button">
+                                <i class="fas fa-arrow-right"></i>
+                                生成您的專屬抵免流程
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 其他系所課程的特殊提示 -->
+            <section id="otherDeptOnlySection" class="section-card alert-section hidden">
+                <div class="alert-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h2>重要提示</h2>
+                </div>
+                <div class="alert-content">
+                    <div class="alert-message">
+                        <div class="alert-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="alert-text">
+                            <h3>未抵免通識課程</h3>
+                            <p>您選擇的課程類別無需繳交至西灣學院，請直接送交至<strong>教務處</strong>辦理。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 步驟 2: 文件準備清單 -->
+            <section id="preparationSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">步驟 2</div>
+                    <h2>
+                        <i class="fas fa-clipboard-list"></i>
+                        文件準備清單
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="preparation-container" id="preparationSummary">
+                        <!-- 動態生成文件清單 -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 步驟 3: 下載抵免申請單 -->
+            <section id="downloadSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">步驟 3</div>
+                    <h2>
+                        <i class="fas fa-download"></i>
+                        下載抵免申請單
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="download-container">
+                        <div class="info-banner">
+                            <i class="fas fa-info-circle"></i>
+                            <p>請前往西灣學院官方網站下載所需的抵免申請單</p>
+                        </div>
+                        <div class="action-container">
+                            <a href="https://siwan.nsysu.edu.tw/p/404-1029-325831.php#:~:text=表單下載" target="_blank"
+                                class="secondary-button">
+                                <i class="fas fa-external-link-alt"></i>
+                                前往西灣學院學生規章表單網站
+                            </a>
+                        </div>
+                        <div id="formsNeeded" class="forms-container">
+                            <!-- 動態生成需要的表單清單 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 步驟 4: 填寫抵免課程 -->
+            <section id="fillFormsSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">步驟 4</div>
+                    <h2>
+                        <i class="fas fa-edit"></i>
+                        填寫抵免課程
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="fill-container">
+                        <div class="info-banner">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>填寫申請單時，請注意以下各類課程的抵免規定：</p>
+                        </div>
+                        <div id="exemptionRules" class="rules-container">
+                            <!-- 動態生成抵免規定 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 步驟 5: 繳交文件 -->
+            <section id="submitSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">步驟 5</div>
+                    <h2>
+                        <i class="fas fa-hand-holding"></i>
+                        繳交文件至西灣學院
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="submit-container">
+                        <div class="process-flow">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-info">
+                                    <h4>掃描 QR Code 填寫資料</h4>
+                                    <p>到達西灣學院辦公室後，請先掃描現場的 QR Code，登記您的基本資料和填寫欲抵免的通識課程。</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-info">
+                                    <h4>繳交完整文件</h4>
+                                    <p>將所有準備好的文件一併交給承辦人員。請確保文件齊全，否則將不予收件。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="warning-banner">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="warning-content">
+                                <h4>重要提醒</h4>
+                                <ul>
+                                    <li>本院不提供列印服務，請備齊資料後再來繳交</li>
+                                    <li>若資料不齊，西灣學院將不會收件</li>
+                                    <li>如有塗改，請在更正處旁簽名</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 步驟 6: 完成與後續 -->
+            <section id="completionSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">步驟 6</div>
+                    <h2>
+                        <i class="fas fa-check-circle"></i>
+                        完成申請
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="completion-container">
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>審查時間</h4>
+                                    <p>約 <strong>7 個工作天</strong> 完成審查</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>結果通知</h4>
+                                    <p>抵免結果會由<strong>教務處</strong>二次審查後，將結果影本送至各系系辦</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>結果查詢</h4>
+                                    <p>學生可在<strong>成績單系統</strong>上查詢抵免結果</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-banner">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h4>申請說明</h4>
+                                <p>西灣學院收件僅代表受理申請，不代表抵免成功，尚需由審查委員審核課綱相符程度。若中途有問題或需要補件會透過電話聯繫您。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 其他注意事項 -->
+            <section id="additionalNotesSection" class="section-card notes-section hidden">
+                <div class="card-header">
+                    <h2>
+                        <i class="fas fa-lightbulb"></i>
+                        其他注意事項
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="notes-container">
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>西灣學院受理範圍</h4>
+                                <p>僅受理中文、英文、跨院選修、博雅向度、服務學習、體育課程、人科學程課程抵免，並由本院統一審查後送件至教務處。</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>成績單注意事項</h4>
+                                <p>成績單要注意是否有註記「退學」（休學不算）。如有多份抵免單，僅需準備一份正本，其他附上影本，並標註正本在哪份。</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-swimmer"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>游泳課程特別說明</h4>
+                                <p>初級游泳抵免需待抵免審查通過後，並參加轉學生游泳考，方能取得游泳學分。若抵免未通過，可參加暫訂9月份不分身分別的游泳考試。</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>以夏季學院課程抵免</h4>
+                                <p>於申請單上註明夏季學院課程，附上成績單正本即可，不用印課綱。</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>以國際線上教學平台數位課程抵免</h4>
+                                <p>需附上初審表影本、修課成績、課程認證書（如以英文姓名註冊，須附護照證明）。</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="quickGetRules.html" target="_blank">通識快速指南</a>
+                    <a href="faq.html" target="_blank">常見問題</a>
+                </div>
+                <div class="footer-info">
+                    <p>最後更新日期：2025 - 05 - 30</p>
+                    <p>內容僅供參考，請以官方最新公告為準</p>
+                    <p>© 西灣學院</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/creditTransfer_script.js"></script>
+</body>
+
+</html>
