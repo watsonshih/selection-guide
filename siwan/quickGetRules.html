@@ -48,59 +48,75 @@
         <main class="main-content">
             <section class="search-section card">
                 <div class="search-form">
-                    <div class="input-group">
-                        <label for="admissionYear">
-                            <i class="fas fa-calendar-alt"></i> 入學年度
-                        </label>
-                        <div class="select-wrapper">
-                            <select id="admissionYear">
-                                <option value="">請選擇入學年度</option>
-                                <option value="109">109 學年</option>
-                                <option value="110">110 學年</option>
-                                <option value="111">111 學年</option>
-                                <option value="112">112 學年</option>
-                                <option value="113">113 學年</option>
-                                <option value="114">114 學年</option>
-                            </select>
-                            <i class="fas fa-chevron-down"></i>
+                    <div class="input-section">
+                        <div class="input-group">
+                            <label for="admissionYear">
+                                <i class="fas fa-calendar-alt"></i> 入學年度
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="admissionYear">
+                                    <option value="">請選擇入學年度</option>
+                                    <option value="109">109 學年</option>
+                                    <option value="110">110 學年</option>
+                                    <option value="111">111 學年</option>
+                                    <option value="112">112 學年</option>
+                                    <option value="113">113 學年</option>
+                                    <option value="114">114 學年</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="grade">
+                                <i class="fas fa-user-graduate"></i> 年級
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="grade">
+                                    <option value="">請選擇年級</option>
+                                    <option value="1">大一</option>
+                                    <option value="2">大二</option>
+                                    <option value="3">大三</option>
+                                    <option value="4">大四</option>
+                                    <option value="5">碩士班</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="initialEnglishLevel">
+                                <i class="fas fa-language"></i> 初始英語分級
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="initialEnglishLevel">
+                                    <option value="">請選擇分級</option>
+                                    <option value="初級">初級</option>
+                                    <option value="中級">中級</option>
+                                    <option value="中高級">中高級</option>
+                                    <option value="高級">高級</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="help-tips">
+                                <span class="help-tip" data-tip="不知道初始英語分級">
+                                    <i class="fas fa-question-circle"></i> 這是甚麼
+                                </span>
+                                <span class="help-tip" data-tip="想變更初始英語分級">
+                                    <i class="fas fa-question-circle"></i> 想變更
+                                </span>
+                            </div>
+                            <div class="tooltip" id="tooltip-不知道初始英語分級">
+                                僅學士班學生適用。英文分級是依照入學時的學測或指考成績進行分配。你可以在選課系統中選擇 [選課相關資訊] → [英文分級查詢]
+                                查詢自己的分級。非學測、指考入學的學生（像是：特殊選才）皆會被分到初級，可以選擇申請變更分級，或是參加學期初的分級測驗。
+                            </div>
+                            <div class="tooltip" id="tooltip-想變更初始英語分級">
+                                你可以在入學後首次修課前修改 1 次，變更門檻為：TOEIC 聽讀中級 550、中高級 600、高級 700
+                            </div>
                         </div>
                     </div>
-
-                    <div class="input-group">
-                        <label for="grade">
-                            <i class="fas fa-user-graduate"></i> 年級
-                        </label>
-                        <div class="select-wrapper">
-                            <select id="grade">
-                                <option value="">請選擇年級</option>
-                                <option value="1">大一</option>
-                                <option value="2">大二</option>
-                                <option value="3">大三</option>
-                                <option value="4">大四</option>
-                                <option value="5">碩士班</option>
-                            </select>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="initialEnglishLevel">
-                            <i class="fas fa-language"></i> 初始英語分級
-                        </label>
-                        <div class="select-wrapper">
-                            <select id="initialEnglishLevel">
-                                <option value="">請選擇分級</option>
-                                <option value="初級">初級</option>
-                                <option value="中級">中級</option>
-                                <option value="中高級">中高級</option>
-                                <option value="高級">高級</option>
-                            </select>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-
                     <button id="searchButton" class="btn-primary">
-                        <i class="fas fa-search"></i> 查詢規定
+                        <i class="fas fa-search"></i> 查詢
                     </button>
                 </div>
             </section>
@@ -341,7 +357,7 @@
         </footer>
     </div>
 
-    <script src="js/rules_script.js?v=202505291200"></script>
+    <script src="js/rules_script.js?v=202505291428"></script>
 </body>
 
 </html>

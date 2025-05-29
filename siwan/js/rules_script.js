@@ -6,7 +6,7 @@ const rulesDatabase = {
             { category: "跨院選修", credits: "6", description: "可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
             { category: "體驗性課程", credits: "1–2", description: "服務學習 1 學分<br>非軍訓應用性課程可計 1 學分為最低畢業學分<br>大學之道 6 場次" },
-            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
     },
     "110": {
@@ -16,7 +16,7 @@ const rulesDatabase = {
             { category: "跨院選修", credits: "6", description: "可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
-            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
     },
     "111": {
@@ -26,7 +26,7 @@ const rulesDatabase = {
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
-            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
     },
     "112": {
@@ -36,7 +36,7 @@ const rulesDatabase = {
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
-            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
     },
     "113": {
@@ -46,7 +46,7 @@ const rulesDatabase = {
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
-            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
     },
     "114": {
@@ -56,7 +56,7 @@ const rulesDatabase = {
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
-            { category: "運動與健康", credits: "4", description: "不列最低畢業學分，但計入修習總學分" }
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
     }
 };
@@ -309,13 +309,13 @@ const selectionStageRules = {
         "stages": [
             { name: "初選一", language: false, crossCollege: false, general: false, service: false, applied: false, sportRequired: false, sportElective: false },
             { name: "初選二", language: false, crossCollege: false, general: false, service: false, applied: false, sportRequired: false, sportElective: false },
-            { name: "加退選一", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: true },
-            { name: "加退選二", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: true },
+            { name: "加退選一", language: false, crossCollege: false, general: false, service: false, applied: true, sportRequired: true, sportElective: true },
+            { name: "加退選二", language: false, crossCollege: false, general: false, service: false, applied: true, sportRequired: true, sportElective: true },
             { name: "異常處理", language: "限特定情況", crossCollege: "限特定情況", general: "限特定情況", service: "限特定情況", applied: "限特定情況", sportRequired: "限特定情況", sportElective: "限特定情況" }
         ],
         "notes": [
-            "初選階段：碩士班學生不可選修通識課程",
-            "加退選階段：碩士班學生開始可加選通識課程",
+            "初選階段：碩士班學生 <b>不可選修所有通識課程</b>",
+            "加退選階段：碩士班學生 <b>僅可選修應用性課程、運動與健康課程</b>",
             "異常處理階段：限特定情況才可申請選課"
         ]
     }
@@ -352,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 初始化展開區塊功能
     initExpandableSections();
     initSubExpandableSections();
+    initHelpTips();
 
     searchButton.addEventListener('click', function () {
         const admissionYear = admissionYearSelect.value;
@@ -745,6 +746,87 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
+    }
+
+    function initHelpTips() {
+        const helpTips = document.querySelectorAll('.help-tip');
+
+        helpTips.forEach(tip => {
+            const tipType = tip.getAttribute('data-tip');
+            const tooltip = document.getElementById(`tooltip-${tipType}`);
+
+            if (tooltip) {
+                let hideTimeout;
+
+                tip.addEventListener('mouseenter', function () {
+                    clearTimeout(hideTimeout);
+                    positionTooltip(tip, tooltip);
+                    tooltip.classList.add('show');
+                });
+
+                tip.addEventListener('mouseleave', function () {
+                    hideTimeout = setTimeout(() => {
+                        tooltip.classList.remove('show');
+                    }, 200);
+                });
+
+                tip.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    clearTimeout(hideTimeout);
+
+                    document.querySelectorAll('.tooltip').forEach(t => {
+                        if (t !== tooltip) {
+                            t.classList.remove('show');
+                        }
+                    });
+
+                    if (tooltip.classList.contains('show')) {
+                        tooltip.classList.remove('show');
+                    } else {
+                        positionTooltip(tip, tooltip);
+                        tooltip.classList.add('show');
+                    }
+                });
+
+                tooltip.addEventListener('mouseenter', function () {
+                    clearTimeout(hideTimeout);
+                });
+
+                tooltip.addEventListener('mouseleave', function () {
+                    hideTimeout = setTimeout(() => {
+                        tooltip.classList.remove('show');
+                    }, 200);
+                });
+            }
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.help-tip') && !e.target.closest('.tooltip')) {
+                document.querySelectorAll('.tooltip').forEach(tooltip => {
+                    tooltip.classList.remove('show');
+                });
+            }
+        });
+    }
+
+    function positionTooltip(trigger, tooltip) {
+        const triggerRect = trigger.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+
+        let top = triggerRect.bottom + window.scrollY + 10;
+        let left = triggerRect.left + window.scrollX;
+
+        if (left + tooltipRect.width > viewportWidth - 20) {
+            left = viewportWidth - tooltipRect.width - 20;
+        }
+
+        if (left < 20) {
+            left = 20;
+        }
+
+        tooltip.style.top = `${top}px`;
+        tooltip.style.left = `${left}px`;
     }
 
     function expandAllSections() {

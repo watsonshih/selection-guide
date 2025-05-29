@@ -141,10 +141,17 @@ a {
 }
 
 .search-form {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: 5fr 1fr;
+}
+
+.input-section {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .input-group {
@@ -195,6 +202,63 @@ select:focus {
     box-shadow: 0 0 0 3px rgba(74, 111, 255, 0.2);
 }
 
+.help-tips {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.5rem;
+}
+
+.help-tip {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-footer);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.help-tip:hover {
+    color: var(--primary-hover);
+}
+
+.help-tip i {
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--text-light);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-width: 280px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    border: 6px solid transparent;
+    border-bottom-color: var(--text-color);
+}
+
+.tooltip.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     color: white;
@@ -207,6 +271,7 @@ select:focus {
     transition: var(--transition);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .btn-primary i {
@@ -785,7 +850,7 @@ select:focus {
     }
 
     .search-form {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
