@@ -261,19 +261,19 @@
                     </ul>
                 </div>
                 <div class="prep-item">
-                    <h4><i class="fas fa-book"></i> 課程大綱與檢定成績</h4>
+                    <h4><i class="fas fa-book"></i> 課程大綱</h4>
                     <ul>
                         <li>要抵免的中山課程課綱</li>
                         <li>原校的當年度修課課程課綱</li>
-                        ${courses.includes('english') ? '<li>如以檢定成績抵英語文課程，請附檢定成績單正本及影本</li>' : ''}
                     </ul>
                 </div>
                 <div class="prep-item">
-                    <h4><i class="fas fa-graduation-cap"></i> 成績單</h4>
+                    <h4><i class="fas fa-graduation-cap"></i> 原校成績單、檢定成績單</h4>
                     <ul>
                         <li><strong>1 份正本</strong></li>
                         ${formsCount > 1 ? `<li><strong>${formsCount - 1} 份影本</strong>（其他抵免單使用）</li><li>需標註正本在哪份抵免單</li>` : ''}
-                        <li>注意是否有註記"退學"（休學不算）</li>
+                        <li>轉校生需注意是否有註記"退學"（休學不算）</li>
+                        ${courses.includes('english') ? '<li>如以檢定成績抵英語文課程，請附檢定成績單正本及影本各一份</li>' : ''}
                     </ul>
                 </div>
             `;
@@ -347,12 +347,12 @@
         getCourseRules(courseType) {
             const rulesMap = {
                 'interdisciplinary_liberal': {
-                    title: '跨院選修課程',
+                    title: '跨院選修 / 博雅課程',
                     icon: 'fas fa-exchange-alt',
                     rules: [
                         '至多抵免6學分',
                         '111年入學者另取得官方認證閩南語、客語或原住民族等本土語言能力達中級以上，可額外抵免2學分，總計上限8學分',
-                        '須提出申請抵免之當學期（含）算起，4年（8個學期內本校已開設過之課程為原則',
+                        '須提出申請抵免之當學期（含）算起，4年（8個學期內本校已開設過之課程為原則）',
                         '請勿抵免自己學院的課程（例如：中文系學生不能抵免跨文學院課程）',
                         '如有多個跨院選修想抵免，請自己排序（會依照優先順序審查抵免）'
                     ]
@@ -377,7 +377,7 @@
                 },
                 'university_way': {
                     title: '大學之道',
-                    icon: 'fas fa-university',
+                    icon: 'fas fa-chalkboard-teacher',
                     rules: [
                         '原為本校生入（轉）學本校者，已參與之場次均可申辦抵免',
                         '外校生入（轉）學者不得申辦抵免'
@@ -387,7 +387,7 @@
                     title: '英語文課程',
                     icon: 'fas fa-language',
                     rules: [
-                        '可以使用檢定成績抵免，需附檢定成績單正本及影本（正本查驗無誤後會歸還）',
+                        '可以使用檢定成績抵免，需附檢定成績單正本及影本各一份（正本查驗無誤後會歸還）',
                     ]
                 },
                 'humanities_science': {

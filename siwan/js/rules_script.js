@@ -14,7 +14,7 @@ const rulesDatabase = {
         creditTable: [
             { category: "語文素養", credits: "8", description: "中文 6 學分 + 英文 6 學分，其中 8 學分計必修，其餘 4 學分不計入最低畢業學分" },
             { category: "跨院選修", credits: "6", description: "可選擇學院不同領域課程" },
-            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
@@ -24,7 +24,7 @@ const rulesDatabase = {
         creditTable: [
             { category: "語文素養", credits: "6", description: "中文 3 學分 + 英文 3 學分" },
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
-            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
@@ -34,7 +34,7 @@ const rulesDatabase = {
         creditTable: [
             { category: "語文素養", credits: "6", description: "中文 3 學分 + 英文 3 學分" },
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
-            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
@@ -44,7 +44,7 @@ const rulesDatabase = {
         creditTable: [
             { category: "語文素養", credits: "6", description: "中文 3 學分 + 英文 3 學分" },
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
-            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]
@@ -54,7 +54,7 @@ const rulesDatabase = {
         creditTable: [
             { category: "語文素養", credits: "6", description: "中文 3 學分 + 英文 3 學分" },
             { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
-            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
         ]

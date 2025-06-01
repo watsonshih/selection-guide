@@ -21,13 +21,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJZ2K72PMZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-VJZ2K72PMZ');
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                         <i class="fas fa-graduation-cap"></i>
                         抵免指南
                     </h1>
-                    <p class="subtitle">流程式申請指引，讓您清楚了解抵免申請的每個步驟</p>
+                    <p class="subtitle">流程式申請指引，一次了解抵免申請步驟</p>
                 </div>
             </div>
         </header>
@@ -109,7 +109,7 @@
                                     <option value="external">外校轉入學生</option>
                                     <option value="abroad">經本校核准出國研修或修讀雙聯學位制者</option>
                                     <option value="readmission">原為本校生再入學者</option>
-                                    <option value="transfer">轉系生(含降轉生)</option>
+                                    <option value="transfer">本校生、本校轉系生(含降轉生)</option>
                                 </select>
                                 <i class="fas fa-chevron-down select-icon"></i>
                             </div>
@@ -119,7 +119,7 @@
                             <label class="input-label">
                                 <i class="fas fa-list-check"></i>
                                 欲抵免的課程類別
-                                <span class="label-note">（可複選）</span>
+                                <span class="label-note">(可複選)</span>
                             </label>
                             <div class="checkbox-grid">
                                 <label class="checkbox-card">
@@ -130,7 +130,7 @@
                                         </div>
                                         <div class="checkbox-text">
                                             <span class="checkbox-title">中文思辨與表達</span>
-                                            <span class="checkbox-subtitle">體驗性課程</span>
+                                            <span class="checkbox-title">體驗性課程</span>
                                         </div>
                                         <div class="checkbox-indicator"></div>
                                     </div>
@@ -141,11 +141,11 @@
                                         data-form="interdisciplinary_liberal">
                                     <div class="checkbox-content">
                                         <div class="checkbox-icon">
-                                            <i class="fas fa-exchange-alt"></i>
+                                            <i class="fas fa-book-reader"></i>
                                         </div>
                                         <div class="checkbox-text">
                                             <span class="checkbox-title">跨院選修</span>
-                                            <span class="checkbox-subtitle">博雅課程</span>
+                                            <span class="checkbox-title">博雅課程</span>
                                         </div>
                                         <div class="checkbox-indicator"></div>
                                     </div>
@@ -173,7 +173,7 @@
                                         </div>
                                         <div class="checkbox-text">
                                             <span class="checkbox-title">英語文課程</span>
-                                            <span class="checkbox-subtitle">語言課程</span>
+                                            <span class="checkbox-subtitle">通識英文、跨院 EAP/ESP</span>
                                         </div>
                                         <div class="checkbox-indicator"></div>
                                     </div>
@@ -183,11 +183,11 @@
                                     <input type="checkbox" value="university_way" data-form="university_way">
                                     <div class="checkbox-content">
                                         <div class="checkbox-icon">
-                                            <i class="fas fa-university"></i>
+                                            <i class="fas fa-chalkboard-teacher"></i>
                                         </div>
                                         <div class="checkbox-text">
                                             <span class="checkbox-title">大學之道</span>
-                                            <span class="checkbox-subtitle">入門課程</span>
+                                            <span class="checkbox-subtitle">演講</span>
                                         </div>
                                         <div class="checkbox-indicator"></div>
                                     </div>
@@ -201,7 +201,6 @@
                                         </div>
                                         <div class="checkbox-text">
                                             <span class="checkbox-title">人科學程課程</span>
-                                            <span class="checkbox-subtitle">跨領域課程</span>
                                         </div>
                                         <div class="checkbox-indicator"></div>
                                     </div>
@@ -211,11 +210,10 @@
                                     <input type="checkbox" value="other_department" data-form="other_department">
                                     <div class="checkbox-content">
                                         <div class="checkbox-icon">
-                                            <i class="fas fa-building"></i>
+                                            <i class="fas fa-school"></i>
                                         </div>
                                         <div class="checkbox-text">
                                             <span class="checkbox-title">其他系所課程</span>
-                                            <span class="checkbox-subtitle">專業課程</span>
                                         </div>
                                         <div class="checkbox-indicator"></div>
                                     </div>
@@ -281,7 +279,10 @@
                     <div class="download-container">
                         <div class="info-banner">
                             <i class="fas fa-info-circle"></i>
-                            <p>請前往西灣學院官方網站下載所需的抵免申請單</p>
+                            <p>請前往西灣學院官方網站下載所需的抵免申請單：</p>
+                        </div>
+                        <div id="formsNeeded" class="forms-container">
+                            <!-- 動態生成需要的表單清單 -->
                         </div>
                         <div class="action-container">
                             <a href="https://siwan.nsysu.edu.tw/p/404-1029-325831.php#:~:text=表單下載" target="_blank"
@@ -289,9 +290,6 @@
                                 <i class="fas fa-external-link-alt"></i>
                                 前往西灣學院學生規章表單網站
                             </a>
-                        </div>
-                        <div id="formsNeeded" class="forms-container">
-                            <!-- 動態生成需要的表單清單 -->
                         </div>
                     </div>
                 </div>
@@ -303,7 +301,7 @@
                     <div class="step-badge">步驟 4</div>
                     <h2>
                         <i class="fas fa-edit"></i>
-                        填寫抵免課程
+                        填寫申請單並準備文件
                     </h2>
                 </div>
                 <div class="card-content">
@@ -335,14 +333,14 @@
                                 <div class="step-number">1</div>
                                 <div class="step-info">
                                     <h4>掃描 QR Code 填寫資料</h4>
-                                    <p>到達西灣學院辦公室後，請先掃描現場的 QR Code，登記您的基本資料和填寫欲抵免的通識課程。</p>
+                                    <p>到達西灣學院（圖資 10F 電梯口）後，請先掃描現場的 QR Code，登記您的基本資料和填寫欲抵免的通識課程。</p>
                                 </div>
                             </div>
                             <div class="process-step">
                                 <div class="step-number">2</div>
                                 <div class="step-info">
                                     <h4>繳交完整文件</h4>
-                                    <p>將所有準備好的文件一併交給承辦人員。請確保文件齊全，否則將不予收件。</p>
+                                    <p>將所有準備好的文件一併交給工讀生。請確保文件齊全，否則將不予收件。</p>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +350,7 @@
                                 <h4>重要提醒</h4>
                                 <ul>
                                     <li>本院不提供列印服務，請備齊資料後再來繳交</li>
-                                    <li>若資料不齊，西灣學院將不會收件</li>
+                                    <li>若資料不齊，本院將不會收件</li>
                                     <li>如有塗改，請在更正處旁簽名</li>
                                 </ul>
                             </div>
@@ -397,7 +395,7 @@
                                 </div>
                                 <div class="timeline-content">
                                     <h4>結果查詢</h4>
-                                    <p>學生可在<strong>成績單系統</strong>上查詢抵免結果</p>
+                                    <p>學生可在<strong>成績系統</strong>上查詢抵免結果</p>
                                 </div>
                             </div>
                         </div>
