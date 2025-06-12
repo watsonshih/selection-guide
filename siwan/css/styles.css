@@ -41,6 +41,10 @@ a {
     color: var(--primary-color);
 }
 
+ol {
+    padding-inline-start: 1em;
+}
+
 .mob-br {
     display: none;
 }
