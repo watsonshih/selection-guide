@@ -247,17 +247,35 @@
             }
         }
 
+        getDisclaimersByStatus(status) {
+            const disclaimers = [];
+            if (status === 'external' || status === 'abroad') {
+                disclaimers.push('學分不得以少抵多 (可多門課程抵免本校1門課程)。');
+                disclaimers.push('原為外校生入（轉）學本校者或經本校核准出國研修、校際選課或修讀雙聯學位制者：已修習成績須達七十分以上，始可提出抵免申請。');
+            } else if (status === 'readmission' || status === 'transfer') {
+                disclaimers.push('原為本校生入（轉）學本校者或轉系生(含降轉生)：已修習成績達六十分以上，均可提出抵免申請。');
+            }
+            return disclaimers;
+        }
+
         generatePreparationSection(courses) {
             if (!this.elements.preparationSummary) return;
 
             const formsCount = this.getFormsCount(courses);
             const formsList = this.getFormsList(courses);
+            const disclaimers = this.getDisclaimersByStatus(this.studentStatus);
 
             const preparationHTML = `
                 <div class="prep-item">
                     <h4><i class="fas fa-file-alt"></i> 抵免申請單</h4>
                     <ul>
-                        ${formsList.map(form => `<li>${this.escapeHtml(form)}</li>`).join('')}
+                        ${formsList.map(form => {
+                if (form.includes('<a href')) {
+                    return `<li>${form}</li>`;
+                }
+                return `<li>${this.escapeHtml(form)}</li>`;
+            }).join('')
+                }
                     </ul>
                 </div>
                 <div class="prep-item">
@@ -274,6 +292,7 @@
                         ${formsCount > 1 ? `<li><strong>${formsCount - 1} 份影本</strong>（其他抵免單使用）</li><li>需標註正本在哪份抵免單</li>` : ''}
                         <li>轉校生需注意是否有註記"退學"（休學不算）</li>
                         ${courses.includes('english') ? '<li>如以檢定成績抵英語文課程，請附檢定成績單正本及影本各一份</li>' : ''}
+                        ${disclaimers.map(d => `<li>${this.escapeHtml(d)}</li>`).join('')}
                     </ul>
                 </div>
             `;
@@ -286,11 +305,20 @@
 
             const formsList = this.getFormsList(courses);
 
-            const formsHTML = formsList.map(form => `
-                <div class="form-item">
-                    <h4><i class="fas fa-file-pdf"></i> ${this.escapeHtml(form)}</h4>
-                </div>
-            `).join('');
+            const formsHTML = formsList.map(form => {
+                if (form.includes('<a href')) {
+                    return `
+                        <div class="form-item">
+                            <h4><i class="fas fa-file-pdf"></i> ${form}</h4>
+                        </div>
+                    `;
+                }
+                return `
+                    <div class="form-item">
+                        <h4><i class="fas fa-file-pdf"></i> ${this.escapeHtml(form)}</h4>
+                    </div>
+                `;
+            }).join('');
 
             this.elements.formsNeeded.innerHTML = formsHTML;
         }
@@ -323,38 +351,69 @@
         }
 
         getFormsCount(courses) {
-            return courses.filter(course =>
-                ['chinese_experience', 'interdisciplinary_liberal', 'sports',
-                    'english', 'university_way', 'humanities_science'].includes(course)
-            ).length;
+            // 檢查是否包含中文思辨與表達或體驗性課程，合併計算為 1 份
+            const hasChinese = courses.includes('chinese');
+            const hasExperience = courses.includes('experience');
+            const chineseExperienceCount = (hasChinese || hasExperience) ? 1 : 0;
+
+            const otherCourses = courses.filter(course =>
+                !['chinese', 'experience'].includes(course) &&
+                ['interdisciplinary_liberal', 'sports', 'english', 'university_way', 'humanities_science'].includes(course)
+            );
+
+            return chineseExperienceCount + otherCourses.length;
         }
 
         getFormsList(courses) {
             const formsMap = {
-                'chinese_experience': '【中文思辨與表達】【體驗性課程】抵免申請單',
+                'chinese': '【中文思辨與表達】【體驗性課程】抵免申請單',
+                'experience': '【中文思辨與表達】【體驗性課程】抵免申請單',
                 'interdisciplinary_liberal': '【跨院選修】【博雅課程】抵免申請單',
                 'sports': '【運動與健康課程】抵免申請單',
                 'english': '【英語文課程】抵免申請單',
                 'university_way': '【大學之道】抵免申請單',
-                'humanities_science': '【人科學程課程】抵免申請單'
+                'humanities_science': '【人科學程】<a href="https://oaa.nsysu.edu.tw/p/406-1003-19699,r706.php?Lang=zh-tw" target="_blank">通用國立中山大學學生抵免學分申請表</a>'
             };
 
-            return courses
-                .filter(course => formsMap[course])
-                .map(course => formsMap[course]);
+            const forms = new Set();
+
+            courses.forEach(course => {
+                if (formsMap[course]) {
+                    forms.add(formsMap[course]);
+                }
+            });
+
+            return Array.from(forms);
         }
 
         getCourseRules(courseType) {
             const rulesMap = {
+                'chinese': {
+                    title: '中文思辨與表達',
+                    icon: 'fas fa-pen-fancy',
+                    rules: [
+                        '依照課綱相似度審查',
+                        '需符合課程標準與學習目標'
+                    ]
+                },
+                'experience': {
+                    title: '體驗性課程',
+                    icon: 'fas fa-hands-helping',
+                    rules: [
+                        '服務學習課程：須符合本校服務學習課程18小時修習內容及至少18小時的社區服務(不含訓練時數，若課綱看不出來服務時數須出示服務時數證明)，方可抵免1學分',
+                        '應用性課程：原為本校生入（轉）學本校者可申辦抵免，外校生入（轉）學者不得申辦抵免',
+                        '全民國防課程：應至原開課學校申請役期折抵'
+                    ]
+                },
                 'interdisciplinary_liberal': {
                     title: '跨院選修 / 博雅課程',
                     icon: 'fas fa-exchange-alt',
                     rules: [
-                        '至多抵免6學分',
-                        '111年入學者另取得官方認證閩南語、客語或原住民族等本土語言能力達中級以上，可額外抵免2學分，總計上限8學分',
+                        '分別各至多抵免 6 學分',
+                        '111年入學者另取得官方認證閩南語、客語或原住民族等本土語言能力達中級以上，可額外抵免至多2學分，總計上限8學分',
                         '須提出申請抵免之當學期（含）算起，4年（8個學期內本校已開設過之課程為原則）',
                         '請勿抵免自己學院的課程（例如：中文系學生不能抵免跨文學院課程）',
-                        '如有多個跨院選修想抵免，請自己排序（會依照優先順序審查抵免）'
+                        '如有多門課程想抵免，請自己排序（會依照優先順序審查抵免）'
                     ]
                 },
                 'sports': {
@@ -362,25 +421,15 @@
                     icon: 'fas fa-running',
                     rules: [
                         '體育課依照課綱相似度來審查（0學分可抵免）',
-                        '初級游泳抵免需待抵免審查通過後，並參加轉學生游泳考，方能取得游泳學分',
-                        '若抵免未通過，可參加暫訂9月份不分身分別的游泳考試，確切時間請查看西灣學院運健中心公告'
-                    ]
-                },
-                'chinese_experience': {
-                    title: '中文思辨與表達 / 體驗性課程',
-                    icon: 'fas fa-pen-fancy',
-                    rules: [
-                        '服務學習課程：須符合本校服務學習課程18小時修習內容及至少18小時的社區服務工作（不含訓練時數），方可抵免1學分',
-                        '應用性課程：原為本校生入（轉）學本校者可申辦抵免，外校生入（轉）學者不得申辦抵免',
-                        '全民國防課程應至原開課學校申請役期折抵'
+                        '初級游泳抵免需待抵免審查通過後，並參加 25 公尺抵免游泳考試，方能取得游泳學分',
+                        '若抵免審查未通過，可直接參加每學期開設的 50 公尺抵免游泳考試，確切時間請查看西灣學院運健中心公告'
                     ]
                 },
                 'university_way': {
                     title: '大學之道',
                     icon: 'fas fa-chalkboard-teacher',
                     rules: [
-                        '原為本校生入（轉）學本校者，已參與之場次均可申辦抵免',
-                        '外校生入（轉）學者不得申辦抵免'
+                        '可抵免場次僅限本校認列之場次，外校轉入生及國外演講場次無法抵免。'
                     ]
                 },
                 'english': {
@@ -394,8 +443,7 @@
                     title: '人科學程課程',
                     icon: 'fas fa-atom',
                     rules: [
-                        '依照課綱相似度進行審查',
-                        '須提出申請抵免之當學期（含）算起，4年（8個學期）內本校已開設過之課程為原則'
+                        '依循教務處公告的抵免規定',
                     ]
                 }
             };
