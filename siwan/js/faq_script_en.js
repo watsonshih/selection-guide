@@ -26,7 +26,7 @@ A：
 
 **Q4. What is the English proficiency graduation requirement? Can I not graduate if I don't pass it?**
 A：
-Yes, there is an "English Language Proficiency Standard" graduation requirement for students of all enrollment years. You must meet the university's standard (e.g., by passing a designated external English proficiency test) and register your score in the "English Proficiency Standard Evaluation System" to complete the certification process. Please check the <a href="https://emicenter.siwan.nsysu.edu.tw" target="_blank">EMI Center of Si-Wan College</a> for the latest standards and approved tests.
+Yes, there is an "English Language Proficiency Standard" graduation requirement for students of all enrollment years. You must meet the university's standard (e.g., by passing a designated external English proficiency test) and register your score in the "English Proficiency Standard Evaluation System" to complete the certification process. Please check the <a href="https://emicenter.siwan.nsysu.edu.tw" target="_blank">EMI Center of Si Wan College</a> for the latest standards and approved tests.
 ---
 
 **Q5. If I keep failing the external English proficiency tests, are there any alternatives to meet the graduation requirement?**
@@ -54,7 +54,7 @@ A：
 
 **Q9. Do I need to take English courses in the order of my placement level?**
 A：
-Yes, you must follow the course sequence based on your placement test results at enrollment and the regulations for your enrollment year. You cannot skip levels or take courses out of order; otherwise, the credits may not be recognized. Please refer to the official announcements from Si-Wan College for detailed course path diagrams and regulations.
+Yes, you must follow the course sequence based on your placement test results at enrollment and the regulations for your enrollment year. You cannot skip levels or take courses out of order; otherwise, the credits may not be recognized. Please refer to the official announcements from Si Wan College for detailed course path diagrams and regulations.
 ---
 
 **Q10. Can I use an English proficiency test score from before I entered university to certify my graduation requirement?**
@@ -69,7 +69,7 @@ Please log in to the "English Proficiency Standard Evaluation System" to check. 
 
 **Q12. How do I apply for an English course credit transfer?**
 A：
-English course credit transfers are mainly for: external English test scores, successfully completed English courses from another university, and transfers between our university's inter-college EAP/ESP courses and General English (depending on enrollment year). You must submit the application form, official transcripts (from tests or other schools), and course syllabi (for transfers from other schools) to the Center for EMI Teaching Excellence at Si-Wan College during the official application period (usually the first or second week of the semester, check the academic calendar). The rules for transfers between EAP/ESP and General English vary by enrollment year, so be sure to check the latest announcements from Si-Wan College.
+English course credit transfers are mainly for: external English test scores, successfully completed English courses from another university, and transfers between our university's inter-college EAP/ESP courses and General English (depending on enrollment year). You must submit the application form, official transcripts (from tests or other schools), and course syllabi (for transfers from other schools) to the Center for EMI Teaching Excellence at Si Wan College during the official application period (usually the first or second week of the semester, check the academic calendar). The rules for transfers between EAP/ESP and General English vary by enrollment year, so be sure to check the latest announcements from Si Wan College.
 ---
 
 **Q13. If my English placement level is "Advanced", do I still need to apply for a credit transfer for the "High-Intermediate" course?**
@@ -79,7 +79,7 @@ No. If your placement level is "Advanced", you are automatically deemed to have 
 
 **Q14. Where can I download the application form for English course credit transfers?**
 A：
-Please go to the official website of Si-Wan College. You can usually find it under "Regulations & Forms" or in the "Student Area" under "Forms Download." Make sure to download the form that corresponds to your year of enrollment.
+Please go to the official website of Si Wan College. You can usually find it under "Regulations & Forms" or in the "Student Area" under "Forms Download." Make sure to download the form that corresponds to your year of enrollment.
 ---
 
 ### III. Inter-college Electives
@@ -106,7 +106,7 @@ After transferring, you need to check if your previously taken inter-college ele
 
 **Q19. For double major students, how are "inter-college electives" defined?**
 A：
-When choosing inter-college electives, double major students are judged based on their "primary major at the time of enrollment (first major)." This means the course must be offered by a college *other than* the one their first major belongs to and be recognized by Si-Wan College.
+When choosing inter-college electives, double major students are judged based on their "primary major at the time of enrollment (first major)." This means the course must be offered by a college *other than* the one their first major belongs to and be recognized by Si Wan College.
 ---
 
 **Q20. Is there a credit limit for inter-college electives?**
@@ -154,7 +154,7 @@ A：
 
 **Q27. Where can I find the schedule for the "Primer on College Life" lectures? What should I pay attention to when attending?**
 A：
-The schedule for "Primer on College Life" lectures and activities is posted on the official website of Si-Wan College. Please check it regularly. When attending, be sure to follow the organizer's instructions for signing in and out to ensure your attendance is properly recorded.
+The schedule for "Primer on College Life" lectures and activities is posted on the official website of Si Wan College. Please check it regularly. When attending, be sure to follow the organizer's instructions for signing in and out to ensure your attendance is properly recorded.
 ---
 
 **Q28. What if I'm about to graduate and realize I haven't finished the "Primer on College Life" lectures?**
@@ -164,7 +164,7 @@ If you discover in your senior year that you haven't completed the lecture requi
 
 **Q29. I attended a "Primer on College Life" lecture, but there's no record in the system. What should I do?**
 A：
-You must confirm your attendance records before the end of the semester in which you attended the lecture. If you find a missing record, you must contact Si-Wan College within one month of the lecture (or before the deadline for grade submission for that semester). Overdue requests may not be processed. The link to check your records is usually provided on the Si-Wan College website.
+You must confirm your attendance records before the end of the semester in which you attended the lecture. If you find a missing record, you must contact Si Wan College within one month of the lecture (or before the deadline for grade submission for that semester). Overdue requests may not be processed. The link to check your records is usually provided on the Si Wan College website.
 ---
 
 **Q30. Can I wear slippers to the "Primer on College Life" lectures?**
@@ -221,7 +221,7 @@ No. In the same semester that you take the "Sport & Health: Basic Swimming" cour
 
 **Q39. I already know how to swim. Can I get an exemption from the "Basic Swimming" course or transfer credit for it?**
 A：
-Yes. The university will hold a swimming proficiency test after the semester begins (the standard is typically 50-meter breaststroke). Please check the Si-Wan College website for the test schedule. A list of students who pass the test for exemption will be sent to the Office of Academic Affairs. If your transcript does not show "TR" for swimming by the end of the semester, please contact the center promptly to confirm.
+Yes. The university will hold a swimming proficiency test after the semester begins (the standard is typically 50-meter breaststroke). Please check the Si Wan College website for the test schedule. A list of students who pass the test for exemption will be sent to the Office of Academic Affairs. If your transcript does not show "TR" for swimming by the end of the semester, please contact the center promptly to confirm.
 ---
 
 ### VII. Credit Calculation, Transfers & Graduation Review
@@ -242,7 +242,7 @@ These credits will appear in your "total credits taken" on your transcript, but 
 
 **Q42. I am a double major or transfer student. If I encounter conflicting regulations (e.g., different versions of general education requirements), which version should I follow?**
 A：
-In principle, all students' general education requirements are based on the rules of their "enrollment academic year." In special cases (e.g., if a postponed graduation spans a transition between old and new systems), it is recommended to proactively consult with Si-Wan College or the Registration Division of the Office of Academic Affairs for a case-by-case review.
+In principle, all students' general education requirements are based on the rules of their "enrollment academic year." In special cases (e.g., if a postponed graduation spans a transition between old and new systems), it is recommended to proactively consult with Si Wan College or the Registration Division of the Office of Academic Affairs for a case-by-case review.
 ---
 
 **Q43. I have already reached the credit limit for the semester, but I still want to take more general education courses. Can I apply for a credit overload?**
