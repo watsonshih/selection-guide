@@ -283,6 +283,7 @@
                     <ul>
                         <li>要抵免的中山課程課綱</li>
                         <li>原校的當年度修課課程課綱</li>
+                        ${this.studentStatus === 'readmission' || this.studentStatus === 'transfer' ? '<li>原為本校生入(轉)學本校者抵同課程免附課綱</li>' : ''}
                     </ul>
                 </div>
                 <div class="prep-item">
