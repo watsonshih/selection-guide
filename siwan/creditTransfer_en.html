@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Si Wan College Credit Transfer Guide - National Sun Yat-sen University</title>
+    <meta name="keywords"
+        content="Si Wan College, NSYSU, Credit Transfer, Application Guide, Sun Yat-sen, credit waiver, regulations, Office of Academic Affairs, student">
+    <meta name="description"
+        content="Si Wan College Credit Transfer Guide, a step-by-step application guide to help you understand every step of the credit transfer process!">
+    <link rel="icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png">
+    <link rel="shortcut icon" href="https://siwan.nsysu.edu.tw/static/file/29/1029/msys_1029_251191_17171.png"
+        type="image/x-icon">
+    <meta itemprop="thumbnailUrl" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <meta itemprop="image" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <meta property="og:image" content="https://watsonshih.github.io/selection-guide/pic/banner.jpg">
+    <link rel="stylesheet" href="css/styles_creditTransfer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-background"></div>
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="https://siwan.nsysu.edu.tw" target="_blank" class="logo-link">
+                        <img src="https://siwan.nsysu.edu.tw/static/file/29/1029/img/4414/siwan-logo-black-noshadow.svg"
+                            alt="Si Wan College" class="logo-img">
+                    </a>
+                </div>
+                <div class="title-section">
+                    <h1 class="main-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Credit Transfer Guide
+                    </h1>
+                    <p class="subtitle">A step-by-step guide to understand the credit transfer application process</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="progress-indicator hidden" id="progressIndicator">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-circle">1</div>
+                        <span>Basic Info</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-circle">2</div>
+                        <span>Preparation</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-circle">3</div>
+                        <span>Download</span>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-circle">4</div>
+                        <span>Fill Forms</span>
+                    </div>
+                    <div class="step" data-step="5">
+                        <div class="step-circle">5</div>
+                        <span>Submission</span>
+                    </div>
+                    <div class="step" data-step="6">
+                        <div class="step-circle">6</div>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <section id="inputSection" class="section-card step-section">
+                <div class="card-header">
+                    <div class="step-badge">Step 1</div>
+                    <h2>
+                        <i class="fas fa-user-edit"></i>
+                        Fill in Basic Information
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="form-container">
+                        <div class="input-group">
+                            <label for="studentStatus" class="input-label">
+                                <i class="fas fa-id-card"></i>
+                                Student Identity
+                            </label>
+                            <div class="select-container">
+                                <select id="studentStatus" class="form-select" required>
+                                    <option value="">Please select your identity</option>
+                                    <option value="external">Transfer student from another university</option>
+                                    <option value="abroad">Student approved by NSYSU for overseas study or dual-degree
+                                        programs</option>
+                                    <option value="readmission">Readmitted NSYSU student</option>
+                                    <option value="transfer">Current NSYSU student, including departmental transfers
+                                        (and transfers to a lower grade)</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">
+                                <i class="fas fa-list-check"></i>
+                                Course categories for credit transfer
+                                <span class="label-note">(multiple selections possible)</span>
+                            </label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="chinese" data-form="chinese_experience">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-pen-fancy"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Critical thinking and expression in
+                                                Chinese</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="experience" data-form="chinese_experience">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-hands-helping"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Practical Experience Courses</span>
+                                            <span class="checkbox-subtitle">Service Learning, Applied Courses</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="interdisciplinary_liberal"
+                                        data-form="interdisciplinary_liberal">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-book-reader"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Inter-college electives</span>
+                                            <span class="checkbox-title">Liberal Arts Courses</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="sports" data-form="sports">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-running"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Sports and Health Courses</span>
+                                            <span class="checkbox-subtitle">Physical Education Courses</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="english" data-form="english">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-language"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">English Courses</span>
+                                            <span class="checkbox-subtitle">General English, Inter-college
+                                                EAP/ESP</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="university_way" data-form="university_way">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-chalkboard-teacher"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">The Way of Great Learning</span>
+                                            <span class="checkbox-subtitle">Lectures</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="humanities_science" data-form="humanities_science">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-atom"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Program in Interdisciplinary</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox-card">
+                                    <input type="checkbox" value="other_department" data-form="other_department">
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-icon">
+                                            <i class="fas fa-school"></i>
+                                        </div>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Courses from Other Departments</span>
+                                        </div>
+                                        <div class="checkbox-indicator"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="action-container">
+                            <button id="generateGuideBtn" class="primary-button">
+                                <i class="fas fa-arrow-right"></i>
+                                Generate Your Personalized Transfer Process
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="otherDeptOnlySection" class="section-card alert-section hidden">
+                <div class="alert-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h2>Important Notice</h2>
+                </div>
+                <div class="alert-content">
+                    <div class="alert-message">
+                        <div class="alert-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="alert-text">
+                            <h3>No General Education Courses for Transfer</h3>
+                            <p>The course categories you have selected do not need to be submitted to Si Wan College.
+                                Please submit them directly to the <strong>Office of Academic Affairs</strong> for
+                                processing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="preparationSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">Step 2</div>
+                    <h2>
+                        <i class="fas fa-clipboard-list"></i>
+                        Document Preparation Checklist
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="preparation-container" id="preparationSummary">
+                    </div>
+                </div>
+            </section>
+
+            <section id="downloadSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">Step 3</div>
+                    <h2>
+                        <i class="fas fa-download"></i>
+                        Download Credit Transfer Application Forms
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="download-container">
+                        <div class="info-banner">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Please go to the official Si Wan College website to download the required credit transfer
+                                application forms:</p>
+                        </div>
+                        <div id="formsNeeded" class="forms-container">
+                        </div>
+                        <div class="action-container">
+                            <a href="https://siwan.nsysu.edu.tw/p/404-1029-325831.php#:~:text=表單下載" target="_blank"
+                                class="secondary-button">
+                                <i class="fas fa-external-link-alt"></i>
+                                Go to Si Wan College Student Regulations & Forms Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fillFormsSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">Step 4</div>
+                    <h2>
+                        <i class="fas fa-edit"></i>
+                        Fill Out Application Forms and Prepare Documents
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="fill-container">
+                        <div class="info-banner">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>When filling out the application forms, please note the following transfer regulations
+                                for each course type:</p>
+                        </div>
+                        <div id="exemptionRules" class="rules-container">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="submitSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">Step 5</div>
+                    <h2>
+                        <i class="fas fa-hand-holding"></i>
+                        Submit Documents to Si Wan College
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="submit-container">
+                        <div class="process-flow">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-info">
+                                    <h4>Scan QR Code to Fill in Information</h4>
+                                    <p>After arriving at Si Wan College (Library & Information Building 10F, near the
+                                        elevator), please first scan the on-site QR Code to register your basic
+                                        information and list the general education courses you wish to transfer.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-info">
+                                    <h4>Submit Complete Documents</h4>
+                                    <p>Hand all prepared documents to the student assistant. Please ensure all documents
+                                        are complete, otherwise they will not be accepted.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="warning-banner">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="warning-content">
+                                <h4>Important Reminders</h4>
+                                <ul>
+                                    <li>The college does not provide printing services. Please prepare all materials
+                                        before submission.</li>
+                                    <li>Incomplete applications will not be accepted.</li>
+                                    <li>If there are any alterations, please sign next to the correction.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="completionSection" class="section-card step-section hidden">
+                <div class="card-header">
+                    <div class="step-badge">Step 6</div>
+                    <h2>
+                        <i class="fas fa-check-circle"></i>
+                        Application Complete
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="completion-container">
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Review Time</h4>
+                                    <p>Review will be completed in approximately <strong>7 working days</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Result Notification</h4>
+                                    <p>After a secondary review by the <strong>Office of Academic Affairs</strong>, a
+                                        copy of the transfer results will be sent to each department office.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Check Your Results</h4>
+                                    <p>Students can check the credit transfer results on the <strong>grade inquiry
+                                            system</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-banner">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h4>Application Notes</h4>
+                                <p>Acceptance of your documents by Si Wan College only means the application is being
+                                    processed; it does not guarantee successful credit transfer. The outcome depends on
+                                    the review committee's assessment of syllabus similarity. We will contact you by
+                                    phone if there are any issues or if additional documents are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="additionalNotesSection" class="section-card notes-section hidden">
+                <div class="card-header">
+                    <h2>
+                        <i class="fas fa-lightbulb"></i>
+                        Other Important Notes
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="notes-container">
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>Scope of Si Wan College's Acceptance</h4>
+                                <p>The college only accepts applications for Chinese, English, Inter-college electives,
+                                    Liberal Arts courses, Service Learning, Physical Education, and Program in
+                                    Interdisciplinary courses. These will be reviewed by the college and then sent to
+                                    the Office of Academic Affairs.</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>Transcript Notes</h4>
+                                <p>Please check if your transcript is marked with "Withdrawal" (Leave of absence does
+                                    not count). If you have multiple application forms, you only need one original
+                                    transcript; provide photocopies for the others and indicate on which form the
+                                    original is attached.</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-swimmer"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>Special Instructions for Swimming Courses</h4>
+                                <p>For beginner's swimming, after the transfer application is approved, you must also
+                                    pass a 25-meter swimming test to receive the credit. If the application is not
+                                    approved, you can directly take the 50-meter swimming test offered each semester.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>Transferring Summer School Courses</h4>
+                                <p>Indicate the summer school course on the application form and attach the original
+                                    transcript. No syllabus is needed.</p>
+                            </div>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>Transferring International Online Platform Digital Courses</h4>
+                                <p>You must attach a photocopy of The Application Form for Initial Review, your course
+                                    grade, and the course certificate (if you registered with an English name, you must
+                                    also provide proof from your passport).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="quickGetRules.html" target="_blank">General Education Quick Guide</a>
+                    <a href="faq.html" target="_blank">FAQ</a>
+                </div>
+                <div class="footer-info">
+                    <p>Last Updated: 2025-07-13</p>
+                    <p>Content is for reference only. Please refer to the latest official announcements.</p>
+                    <p>© Si Wan College</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/creditTransfer_script_en.js?v=250617"></script>
+</body>
+
+</html>

@@ -454,6 +454,7 @@ a:focus {
     transition: var(--transition-base);
     position: relative;
     min-height: 80px;
+    height: 100%;
 }
 
 .checkbox-card:hover .checkbox-content {
@@ -1163,6 +1164,7 @@ a:focus {
     .checkbox-content {
         min-height: 70px;
         padding: var(--spacing-sm);
+        height: auto;
     }
 
     .checkbox-icon {
