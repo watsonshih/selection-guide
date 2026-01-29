@@ -50,10 +50,20 @@ const rulesDatabase = {
         ]
     },
     "114": {
-        otherRequirements: "English Proficiency Certification, Foreign Languages Dept. students can use two major electives to waive required English + EAP/ESP courses.",
+        otherRequirements: "English Proficiency Certification, Foreign Languages Dept. students can use two major electives to waive required English + EAP/ESP courses. The 'Youthful Literary Engagement: From Text To World' course shall be recognized as the required credits of 'Critical thinking and expression in Chinese.'",
         creditTable: [
-            { category: "Language Literacy", credits: "6", description: "Chinese 3 credits + English 3 credits." },
-            { category: "Inter-college Electives", credits: "8", description: "Includes 1 EAP/ESP course. Courses from different colleges can be selected." },
+            { category: "Language Literacy", credits: "6", description: "Critical thinking and expression in Chinese (3 credits) + General English (3 credits).<br><span style='font-size:0.9em'>(Note: 3 credits of courses defined by the National Languages Development Act can waive 'Critical thinking and expression in Chinese'.)</span>" },
+            { category: "Inter-college Electives", credits: "8", description: "Taiwanese Native Languages / Inter-college (8 credits). Includes 1 EAP/ESP course. Courses from different colleges can be selected." },
+            { category: "Liberal Arts Courses", credits: "13", description: "Must cover courses from at least 4 dimensions.<br>Students from the Colleges of Science, Engineering, Marine Sciences, and Medicine can count a maximum of 6 credits from the 5th and 6th dimensions.<br>Students from the Colleges of Liberal Arts, Management, and Social Sciences must take at least 2 credits from the 5th and 6th dimensions each.<br>Students of Si Wan College are free to choose.<br>Students in all-English programs must take at least 6 credits of English-taught Liberal Arts courses." },
+            { category: "Practical Experience Courses", credits: "1", description: "Service Learning: 1 credit. <br>Primer on College Life: 6 lectures. " },
+            { category: "Sport & Health", credits: "4", description: "Fall Semester, Freshman Year: Sport & Health: Physical Fitness. <br>Spring Semester, Freshman Year: Sport & Health: Basic Swimming. <br>\"Other Required Sport & Health Courses\": 2 credits.<br>Not counted towards the department's minimum graduation credits, but included in the total credits earned. " }
+        ]
+    },
+    "115": {
+        otherRequirements: "English Proficiency Certification, Foreign Languages Dept. students can use two major electives to waive required English + EAP/ESP courses. The 'Youthful Literary Engagement: From Text To World' course shall be recognized as the required credits of 'National Languages'.",
+        creditTable: [
+            { category: "Language Literacy", credits: "6", description: "National Languages (3 credits) (Includes Critical thinking and expression in Chinese / Taiwanese Native Languages) + General English (3 credits)." },
+            { category: "Inter-college Electives", credits: "8", description: "Inter-college Courses (8 credits). Includes 1 EAP/ESP course. Courses from different colleges can be selected." },
             { category: "Liberal Arts Courses", credits: "13", description: "Must cover courses from at least 4 dimensions.<br>Students from the Colleges of Science, Engineering, Marine Sciences, and Medicine can count a maximum of 6 credits from the 5th and 6th dimensions.<br>Students from the Colleges of Liberal Arts, Management, and Social Sciences must take at least 2 credits from the 5th and 6th dimensions each.<br>Students of Si Wan College are free to choose.<br>Students in all-English programs must take at least 6 credits of English-taught Liberal Arts courses." },
             { category: "Practical Experience Courses", credits: "1", description: "Service Learning: 1 credit. <br>Primer on College Life: 6 lectures. " },
             { category: "Sport & Health", credits: "4", description: "Fall Semester, Freshman Year: Sport & Health: Physical Fitness. <br>Spring Semester, Freshman Year: Sport & Health: Basic Swimming. <br>\"Other Required Sport & Health Courses\": 2 credits.<br>Not counted towards the department's minimum graduation credits, but included in the total credits earned. " }
@@ -63,7 +73,7 @@ const rulesDatabase = {
 
 // English Course Flow Database
 const englishCourseFlowDatabase = {
-    "112-114": {
+    "112-115": {
         "Basic": "Basic General English (0 credits) → Intermediate General English → High-Intermediate EAP/ESP",
         "Intermediate": "Intermediate General English → High-Intermediate EAP/ESP",
         "High-Intermediate": "High-Intermediate General English → Advanced EAP/ESP",
@@ -91,7 +101,7 @@ const englishCourseFlowDatabase = {
 
 // English Certification Database
 const englishCertificationDatabase = {
-    "111-114": {
+    "111-115": {
         general: [
             { test: "TOEIC", standard: "Listening + Reading 600" },
             { test: "IELTS", standard: "5" },
@@ -159,7 +169,7 @@ const englishCertificationDatabase = {
 
 // English Practice Portfolio Database
 const englishPracticePortfolioDatabase = {
-    "110-114": [
+    "110-115": [
         "English Table",
         "English Corner",
         "English Writing Lab",
@@ -176,7 +186,7 @@ const englishPracticePortfolioDatabase = {
 
 // English Exemption Database
 const englishExemptionDatabase = {
-    "113-114": {
+    "113-115": {
         exemptionScope: "Can only exempt one English language course. ",
         standards: [
             { test: "GEPT", standard: "High-Intermediate Final Test Passed" },
@@ -240,13 +250,13 @@ const englishExemptionDatabase = {
 
 // Course Selection Stage Rules
 const selectionStageRules = {
-    // Rules for Freshmen
+    // Rules for Freshmen (Starting from Spring 2026, Service Learning is open for freshmen)
     "1": {
         "stages": [
-            { name: "Preliminary Selection 1", language: true, crossCollege: true, general: true, service: false, applied: false, sportRequired: true, sportElective: false },
-            { name: "Preliminary Selection 2", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: false },
-            { name: "Add/Drop 1", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: false },
-            { name: "Add/Drop 2", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: false },
+            { name: "Preliminary Selection 1", language: true, crossCollege: true, general: true, service: true, applied: false, sportRequired: true, sportElective: false },
+            { name: "Preliminary Selection 2", language: true, crossCollege: true, general: true, service: true, applied: true, sportRequired: true, sportElective: false },
+            { name: "Add/Drop 1", language: true, crossCollege: true, general: true, service: true, applied: true, sportRequired: true, sportElective: false },
+            { name: "Add/Drop 2", language: true, crossCollege: true, general: true, service: true, applied: true, sportRequired: true, sportElective: false },
             { name: "Manual Processing", language: "Special cases only", crossCollege: "Special cases only", general: "Special cases only", service: "Special cases only", applied: "Special cases only", sportRequired: "Special cases only", sportElective: "Special cases only" }
         ],
         "notes": [
@@ -552,8 +562,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!flowDisplay) return;
 
         let yearGroup = "";
-        if (["112", "113", "114"].includes(admissionYear)) {
-            yearGroup = "112-114";
+        if (["112", "113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "112-115";
         } else if (admissionYear === "111") {
             yearGroup = "111";
         } else if (admissionYear === "110") {
@@ -597,8 +607,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         let yearGroup = "";
-        if (["111", "112", "113", "114"].includes(admissionYear)) {
-            yearGroup = "111-114";
+        if (["111", "112", "113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "111-115";
         } else if (admissionYear === "110") {
             yearGroup = "110";
         } else if (admissionYear === "109") {
@@ -629,8 +639,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!portfolioDisplay) return;
 
         let yearGroup = "";
-        if (["110", "111", "112", "113", "114"].includes(admissionYear)) {
-            yearGroup = "110-114";
+        if (["110", "111", "112", "113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "110-115";
         } else if (admissionYear === "109") {
             yearGroup = "109";
         }
@@ -656,8 +666,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!exemptionDisplay) return;
 
         let yearGroup = admissionYear;
-        if (["113", "114"].includes(admissionYear)) {
-            yearGroup = "113-114";
+        if (["113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "113-115";
         }
 
         const exemptionData = englishExemptionDatabase[yearGroup];

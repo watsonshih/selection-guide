@@ -3,23 +3,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const keywordSearchInput = document.getElementById('keywordSearch');
 
     const faqMarkdown = `
-### I. Language Literacy (Chinese, Local Languages)
+### I. Language Literacy (Chinese, National Languages)
 
-**Q1. Do I have to complete both "Critical Thinking and Expression in Chinese" (I) and (II)?**
+**Q1. Do I have to take "Critical Thinking and Expression in Chinese"? Are there other options?**
 A：
-*   **Students enrolled in/before the 2021 academic year:** You must complete both courses (I) and (II). Each course is 3 credits, with 2 credits counting toward the minimum graduation requirement and the other 1 credit only counting toward total credits taken. There is no required order for taking the courses.
-*   **Students enrolled in/after the 2022 academic year:** You only need to choose one of the two courses, either (I) or (II). Completing either one will fulfill the 3-credit Chinese language requirement.
+*   **Enrolled in/before AY 2021:** Must complete both (I) and (II).
+*   **Enrolled AY 2022-2024:** Choose either (I) or (II).
+*   **Enrolled AY 2025:** Basically choose either (I) or (II). However, if you complete 3 credits of courses defined by the National Languages Development Act, you may apply to waive this requirement.
+*   **Enrolled in/after AY 2026:** The requirement is "National Languages" (3 credits). You can directly choose either "Critical Thinking and Expression in Chinese" or "Taiwanese Native Languages" courses to fulfill this requirement.
 ---
 
 **Q2. Do students in English-lectured bachelor programs need to take "Critical Thinking and Expression in Chinese"?**
 A：
-Yes, students in English-lectured programs must take the "Critical Thinking and Expression in Chinese" course according to the general education structure. However, foreign or overseas compatriot students with insufficient Chinese ability can apply for an exemption by taking courses at the Chinese Language Center. Additionally, degree students who are foreign, overseas compatriot, or whose high school education was primarily not in Chinese (e.g., IB diploma, homeschooled, or graduates from foreign/international schools) can apply for an exemption by passing the inter-college elective "Reading the Sino-Island". All exemptions must meet relevant course hour and grade requirements.
+Yes, students in English-lectured programs must take the "Critical Thinking and Expression in Chinese" (or "National Languages" from AY 2026) course according to the general education structure. However, foreign or overseas compatriot students with insufficient Chinese ability can apply for an exemption by taking courses at the Chinese Language Center. Additionally, degree students who are foreign, overseas compatriot, or whose high school education was primarily not in Chinese (e.g., IB diploma, homeschooled, or graduates from foreign/international schools) can apply for an exemption by passing the inter-college elective "Reading the Sino-Island". All exemptions must meet relevant course hour and grade requirements.
 ---
 
-**Q3. If I have an intermediate or higher certificate in a local language, what courses can I get an exemption for?**
+**Q3. If I have a certificate or take courses in local languages, what can I waive?**
 A：
-*   **Students enrolled after the 2022 academic year:** You can use an intermediate or higher certificate in a local language (Taiwanese Hokkien, Hakka, or Indigenous languages) or Taiwanese Sign Language to get an exemption for up to 2 credits of "Inter-college Electives".
-*   **Students enrolled after the 2023 academic year:** If you hold one of the above certificates and take an additional 3 credits of local language-related courses, you can directly receive an exemption for the compulsory Chinese language credits.
+*   **Enrolled AY 2022-2025:** An intermediate or higher certificate in a local language (Taiwanese Hokkien, Hakka, Indigenous languages) or Taiwanese Sign Language can waive up to 2 credits of "Inter-college Electives".
+*   **Enrolled AY 2025:** In addition to the elective waiver, taking 3 credits of recognized National Languages Development Act courses can waive the "Critical Thinking and Expression in Chinese" requirement.
+*   **Enrolled in/after AY 2026:** "Native Languages" courses are officially part of the "National Languages" required category. You can directly take these courses to fulfill the 3-credit requirement. The rule for waiving up to 2 inter-college elective credits with a certificate still applies.
 ---
 
 ### II. English Language Proficiency & Courses
@@ -168,18 +171,15 @@ You must confirm your attendance records before the end of the semester in which
 ---
 
 **Q30. Can I wear slippers to the "Primer on College Life" lectures?**
-A：
-No. To show respect for the speaker and the event and to maintain basic decorum, please dress neatly and refrain from wearing slippers to the venue.
+A：No. To show respect for the speaker and the event and to maintain basic decorum, please dress neatly and refrain from wearing slippers to the venue.
 ---
 
 **Q31. Is the Service Learning course mandatory? When should I take it?**
-A：
-Yes, Service Learning is a compulsory 1-credit practical experience course that must be completed by the end of your junior year. If not completed on time, you must make it up before graduation. Any service learning credits taken beyond the required 1 credit will count toward your total graduation credits but not toward the minimum graduation requirement.
+A：Yes, Service Learning is a compulsory 1-credit practical experience course that must be completed by the end of your junior year. If not completed on time, you must make it up before graduation. Any service learning credits taken beyond the required 1 credit will count toward your total graduation credits but not toward the minimum graduation requirement.
 ---
 
 **Q32. Can freshmen take a Service Learning course?**
-A：
-Service Learning courses are designed for second-year students and above. Freshmen can learn about the available courses by attending the end-of-semester Service Learning poster exhibitions or watching the project presentation videos.
+A：Starting from AY 114-2 (2025 Spring semester), Service Learning courses are open to freshmen and above. Students who have not taken a Service Learning course before can attend the end-of-semester Service Learning poster exhibitions or watch the project presentation videos to learn about the Service Learning courses offered by the university.
 ---
 
 **Q33. How are credits for Applied Courses calculated?**
@@ -398,7 +398,7 @@ If you have any questions about the credit calculation or results of your gradua
 
             const answerDiv = document.createElement('div');
             answerDiv.className = 'qa-answer';
-            answerDiv.innerHTML = formatAnswer(faq.answer);
+            answerDiv.innerHTML = marked.parse(faq.answer);
 
             itemDiv.appendChild(questionDiv);
             itemDiv.appendChild(answerDiv);

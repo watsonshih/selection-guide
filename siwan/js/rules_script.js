@@ -50,10 +50,20 @@ const rulesDatabase = {
         ]
     },
     "114": {
-        otherRequirements: "英語能力認證、外文系可用兩門專業選修抵英文必修 + EAP/ESP",
+        otherRequirements: "英語能力認證、外文系可用兩門專業選修抵英文必修 + EAP/ESP、中文系學生以「青聽文學」認抵「中文思辨與表達」必修學分",
         creditTable: [
-            { category: "語文素養", credits: "6", description: "中文 3 學分 + 英文 3 學分" },
-            { category: "跨院選修", credits: "8", description: "含 1 門 EAP/ESP，可選擇學院不同領域課程" },
+            { category: "語文素養", credits: "6", description: "中文思辨與表達 3 學分（修畢《國家語言發展法》界定之語言課程 3 學分，得抵免中文思辨與表達課程）+ 英語文 3 學分" },
+            { category: "跨院選修", credits: "8", description: "本土語言/跨院，含 1 門 EAP/ESP。若已取得官方認證之本土語言能力達中級以上者，至多可抵免跨院選修 2 學分" },
+            { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
+            { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
+            { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
+        ]
+    },
+    "115": {
+        otherRequirements: "英語能力認證、外文系可用兩門專業選修抵英文必修 + EAP/ESP、中文系學生以「青聽文學」認抵「國家語言」必修學分",
+        creditTable: [
+            { category: "語文素養", credits: "6", description: "國家語言 3 學分（包含中文思辨與表達、本土語言）+ 英語文 3 學分" },
+            { category: "跨院選修", credits: "8", description: "跨院課程，含 1 門 EAP/ESP，可選擇學院不同領域課程" },
             { category: "博雅課程", credits: "13", description: "需涵蓋至少 4 個向度課程<br>理、工、海、醫學生第五向度及第六向度最低畢業學分至多只採計 6 學分<br>文、管、社學生第五向度及第六向度的課程至少需各修習 2 學分<br>西灣學院學生自由選修<br>全英語專班學生應選修至少6學分之英語授課博雅課程" },
             { category: "體驗性課程", credits: "1", description: "服務學習 1 學分<br>大學之道 6 場次" },
             { category: "運動與健康", credits: "4", description: "大一上學期 運動與健康：體適能<br>大一下學期 運動與健康：初級游泳<br>「其他必修之運動與健康課程」2 學分<br>不列各學系最低畢業學分，但計入修習總學分" }
@@ -63,7 +73,7 @@ const rulesDatabase = {
 
 // 英語修課流程資料庫
 const englishCourseFlowDatabase = {
-    "112-114": {
+    "112-115": {
         "初級": "英文初級 (0 學分) → 英文中級 → 中高級 EAP/ESP",
         "中級": "英文中級 → 中高級 EAP/ESP",
         "中高級": "英文中高級 → 高級 EAP/ESP",
@@ -91,7 +101,7 @@ const englishCourseFlowDatabase = {
 
 // 英語檢定門檻資料庫
 const englishCertificationDatabase = {
-    "111-114": {
+    "111-115": {
         general: [
             { test: "TOEIC", standard: "聽力＋閱讀 600 分" },
             { test: "IELTS", standard: "5 級" },
@@ -159,7 +169,7 @@ const englishCertificationDatabase = {
 
 // 英語實踐歷程資料庫
 const englishPracticePortfolioDatabase = {
-    "110-114": [
+    "110-115": [
         "English Table",
         "English Corner",
         "英文寫作工坊 (English Writing Lab)",
@@ -176,7 +186,7 @@ const englishPracticePortfolioDatabase = {
 
 // 英語檢定抵免標準資料庫
 const englishExemptionDatabase = {
-    "113-114": {
+    "113-115": {
         exemptionScope: "僅可抵免一門英語文課程學分",
         standards: [
             { test: "GEPT", standard: "中高級複試通過" },
@@ -240,13 +250,13 @@ const englishExemptionDatabase = {
 
 // 選課階段規定
 const selectionStageRules = {
-    // 大一的選課規定
+    // 大一的選課規定（114-2學期起，服務學習開放大一選課）
     "1": {
         "stages": [
-            { name: "初選一", language: true, crossCollege: true, general: true, service: false, applied: false, sportRequired: true, sportElective: false },
-            { name: "初選二", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: false },
-            { name: "加退選一", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: false },
-            { name: "加退選二", language: true, crossCollege: true, general: true, service: false, applied: true, sportRequired: true, sportElective: false },
+            { name: "初選一", language: true, crossCollege: true, general: true, service: true, applied: false, sportRequired: true, sportElective: false },
+            { name: "初選二", language: true, crossCollege: true, general: true, service: true, applied: true, sportRequired: true, sportElective: false },
+            { name: "加退選一", language: true, crossCollege: true, general: true, service: true, applied: true, sportRequired: true, sportElective: false },
+            { name: "加退選二", language: true, crossCollege: true, general: true, service: true, applied: true, sportRequired: true, sportElective: false },
             { name: "異常處理", language: "限特定情況", crossCollege: "限特定情況", general: "限特定情況", service: "限特定情況", applied: "限特定情況", sportRequired: "限特定情況", sportElective: "限特定情況" }
         ],
         "notes": [
@@ -552,8 +562,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!flowDisplay) return;
 
         let yearGroup = "";
-        if (["112", "113", "114"].includes(admissionYear)) {
-            yearGroup = "112-114";
+        if (["112", "113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "112-115";
         } else if (admissionYear === "111") {
             yearGroup = "111";
         } else if (admissionYear === "110") {
@@ -595,8 +605,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         let yearGroup = "";
-        if (["111", "112", "113", "114"].includes(admissionYear)) {
-            yearGroup = "111-114";
+        if (["111", "112", "113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "111-115";
         } else if (admissionYear === "110") {
             yearGroup = "110";
         } else if (admissionYear === "109") {
@@ -627,8 +637,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!portfolioDisplay) return;
 
         let yearGroup = "";
-        if (["110", "111", "112", "113", "114"].includes(admissionYear)) {
-            yearGroup = "110-114";
+        if (["110", "111", "112", "113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "110-115";
         } else if (admissionYear === "109") {
             yearGroup = "109";
         }
@@ -654,8 +664,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!exemptionDisplay) return;
 
         let yearGroup = admissionYear;
-        if (["113", "114"].includes(admissionYear)) {
-            yearGroup = "113-114";
+        if (["113", "114", "115"].includes(admissionYear)) {
+            yearGroup = "113-115";
         }
 
         const exemptionData = englishExemptionDatabase[yearGroup];
