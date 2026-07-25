@@ -366,21 +366,26 @@
         }
 
         getFormsList(courses) {
+            const chineseExperienceForms = [
+                '【國家語言(中文思辨與表達)】【體驗性課程】抵免學分申請表（115 學年度起入學學生適用）',
+                '【中文思辨與表達】【體驗性課程】抵免申請單(100 學年度起入學學生適用)'
+            ];
+
             const formsMap = {
-                'chinese': '【中文思辨與表達】【體驗性課程】抵免申請單',
-                'experience': '【中文思辨與表達】【體驗性課程】抵免申請單',
-                'interdisciplinary_liberal': '【跨院選修】【博雅課程】抵免申請單',
-                'sports': '【運動與健康課程】抵免申請單',
-                'english': '【英語文課程】抵免申請單',
-                'university_way': '【大學之道】抵免申請單',
-                'humanities_science': '【人科學程】<a href="https://oaa.nsysu.edu.tw/p/406-1003-19699,r706.php?Lang=zh-tw" target="_blank">通用國立中山大學學生抵免學分申請表</a>'
+                'chinese': chineseExperienceForms,
+                'experience': chineseExperienceForms,
+                'interdisciplinary_liberal': ['【跨院選修】【博雅課程】抵免申請單'],
+                'sports': ['【運動與健康課程】抵免申請單'],
+                'english': ['【英語文課程】抵免申請單'],
+                'university_way': ['【大學之道】抵免申請單'],
+                'humanities_science': ['【人科學程】<a href="https://oaa.nsysu.edu.tw/p/406-1003-19699,r706.php?Lang=zh-tw" target="_blank">通用國立中山大學學生抵免學分申請表</a>']
             };
 
             const forms = new Set();
 
             courses.forEach(course => {
                 if (formsMap[course]) {
-                    forms.add(formsMap[course]);
+                    formsMap[course].forEach(form => forms.add(form));
                 }
             });
 
@@ -390,7 +395,7 @@
         getCourseRules(courseType) {
             const rulesMap = {
                 'chinese': {
-                    title: '中文思辨與表達',
+                    title: '國家語言(中文思辨與表達、其他本土語言)',
                     icon: 'fas fa-pen-fancy',
                     rules: [
                         '依照課綱相似度審查',

@@ -682,6 +682,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <i class="fas fa-info-circle"></i>
                 <div>
                     <strong>Applicable Exemption Scope:</strong> ${exemptionData.exemptionScope}
+                    <p style="margin-top: 0.5rem; margin-bottom: 0;">Please note that, in principle, credits earned through NSYSU's self-paced digital learning courses cannot be used to apply for exemption from English course requirements.</p>
                 </div>
             </div>
             <div class="table-responsive">

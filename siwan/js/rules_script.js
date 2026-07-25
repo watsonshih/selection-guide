@@ -680,6 +680,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <i class="fas fa-info-circle"></i>
                 <div>
                     <strong>您適用的抵免範圍：</strong>${exemptionData.exemptionScope}
+                    <p style="margin-top: 0.5rem; margin-bottom: 0;">請留意，本校數位自學課程原則上不得辦理英文課程抵免。</p>
                 </div>
             </div>
             <div class="table-responsive">

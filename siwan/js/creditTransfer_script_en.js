@@ -364,21 +364,26 @@
         }
 
         getFormsList(courses) {
+            const chineseExperienceForms = [
+                '【National Language Courses(Critical thinking and expression in Chinese)】【Practical Experience Courses】Credit Transfer Application Form (Applicable to students enrolled in school year 115 and after)',
+                '【Critical thinking and expression in Chinese】【Practical Experience Courses】Credit Transfer Application Form (Applicable to students enrolled in school year 100 and after)'
+            ];
+
             const formsMap = {
-                'chinese': '【Critical Thinking & Expression】【Practical Experience】Credit Transfer Application Form',
-                'experience': '【Critical Thinking & Expression】【Practical Experience】Credit Transfer Application Form',
-                'interdisciplinary_liberal': '【Inter-college Electives】【Liberal Arts】Credit Transfer Application Form',
-                'sports': '【Sports and Health】Credit Transfer Application Form',
-                'english': '【English Courses】Credit Transfer Application Form',
-                'university_way': '【The Way of Great Learning】Credit Transfer Application Form',
-                'humanities_science': '【Program in Interdisciplinary】<a href="https://oaa.nsysu.edu.tw/p/406-1003-19699,r706.php?Lang=en" target="_blank">General NSYSU Student Credit Transfer Application Form</a>'
+                'chinese': chineseExperienceForms,
+                'experience': chineseExperienceForms,
+                'interdisciplinary_liberal': ['【Inter-college Electives】【Liberal Arts】Credit Transfer Application Form'],
+                'sports': ['【Sports and Health】Credit Transfer Application Form'],
+                'english': ['【English Courses】Credit Transfer Application Form'],
+                'university_way': ['【The Way of Great Learning】Credit Transfer Application Form'],
+                'humanities_science': ['【Program in Interdisciplinary】<a href="https://oaa.nsysu.edu.tw/p/406-1003-19699,r706.php?Lang=en" target="_blank">General NSYSU Student Credit Transfer Application Form</a>']
             };
 
             const forms = new Set();
 
             courses.forEach(course => {
                 if (formsMap[course]) {
-                    forms.add(formsMap[course]);
+                    formsMap[course].forEach(form => forms.add(form));
                 }
             });
 
@@ -388,7 +393,7 @@
         getCourseRules(courseType) {
             const rulesMap = {
                 'chinese': {
-                    title: 'Critical thinking and expression in Chinese Courses',
+                    title: 'National Language Courses(Critical thinking and expression in Chinese, Other Native Languages)',
                     icon: 'fas fa-pen-fancy',
                     rules: [
                         'Review is based on syllabus similarity.',
