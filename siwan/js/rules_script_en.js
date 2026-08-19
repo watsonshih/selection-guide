@@ -260,7 +260,7 @@ const selectionStageRules = {
             { name: "Manual Processing", language: "Special cases only", crossCollege: "Special cases only", general: "Special cases only", service: "Special cases only", applied: "Special cases only", sportRequired: "Special cases only", sportElective: "Special cases only" }
         ],
         "notes": [
-            "Language Courses, Service Learning: Limited to one course per semester.",
+            "National Languages (Critical Thinking and Expression in Chinese, Taiwanese Native Languages), English, Service Learning: Limited to one course per semester.",
             "Inter-college Electives & Liberal Arts Courses: Limited to one course during the preliminary selection stage; a second course can be added during the add/drop stage. ",
             "During Preliminary Selection 2 and Add/Drop 2, you can add courses from categories you haven't registered for yet.",
             "Manual Processing is not a regular selection stage. It requires specific reasons and procedures (e.g., course changes, failure to register for a required course, graduation impact). Manual processing for Service Learning, Liberal Arts, and English courses requires an additional authorization slip."
@@ -276,7 +276,7 @@ const selectionStageRules = {
             { name: "Manual Processing", language: "Special cases only", crossCollege: "Special cases only", general: "Special cases only", service: "Special cases only", applied: "Special cases only", sportRequired: "Special cases only", sportElective: "Special cases only" }
         ],
         "notes": [
-            "Language Courses, Service Learning: Limited to one course per semester.",
+            "National Languages (Critical Thinking and Expression in Chinese, Taiwanese Native Languages), English, Service Learning: Limited to one course per semester.",
             "Inter-college Electives & Liberal Arts Courses: Limited to one course during the preliminary selection stage; a second course can be added during the add/drop stage. ",
             "During Preliminary Selection 2 and Add/Drop 2, you can add courses from categories you haven't registered for yet.",
             "Manual Processing is not a regular selection stage. It requires specific reasons and procedures (e.g., course changes, failure to register for a required course, graduation impact). Manual processing for Service Learning, Liberal Arts, and English courses requires an additional authorization slip."
@@ -292,7 +292,7 @@ const selectionStageRules = {
             { name: "Manual Processing", language: "Special cases only", crossCollege: "Special cases only", general: "Special cases only", service: "Special cases only", applied: "Special cases only", sportRequired: "Special cases only", sportElective: "Special cases only" }
         ],
         "notes": [
-            "Language Courses, Service Learning: Limited to one course per semester.",
+            "National Languages (Critical Thinking and Expression in Chinese, Taiwanese Native Languages), English, Service Learning: Limited to one course per semester.",
             "Inter-college Electives & Liberal Arts Courses: Limited to one course during the preliminary selection stage; a second course can be added during the add/drop stage. ",
             "During Preliminary Selection 2 and Add/Drop 2, you can add courses from categories you haven't registered for yet.",
             "Manual Processing is not a regular selection stage. It requires specific reasons and procedures (e.g., course changes, failure to register for a required course, graduation impact). Manual processing for Service Learning, Liberal Arts, and English courses requires an additional authorization slip."
@@ -308,7 +308,7 @@ const selectionStageRules = {
             { name: "Manual Processing", language: "Special cases only", crossCollege: "Special cases only", general: "Special cases only", service: "Special cases only", applied: "Special cases only", sportRequired: "Special cases only", sportElective: "Special cases only" }
         ],
         "notes": [
-            "Language Courses, Service Learning: Limited to one course per semester.",
+            "National Languages (Critical Thinking and Expression in Chinese, Taiwanese Native Languages), English, Service Learning: Limited to one course per semester.",
             "Inter-college Electives & Liberal Arts Courses: Limited to one course during the preliminary selection stage; a second course can be added during the add/drop stage. ",
             "During Preliminary Selection 2 and Add/Drop 2, you can add courses from categories you haven't registered for yet.",
             "Manual Processing is not a regular selection stage. It requires specific reasons and procedures (e.g., course changes, failure to register for a required course, graduation impact). Manual processing for Service Learning, Liberal Arts, and English courses requires an additional authorization slip."
